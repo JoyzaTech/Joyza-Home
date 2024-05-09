@@ -38,7 +38,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: white;
+  background-color: #D88826;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
