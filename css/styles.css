@@ -32,4 +32,24 @@
 }
 #navbar #navLinks a:hover {
   text-decoration: underline;
+}
+
+.scroll {
+  display: grid;
+  grid-template-areas: "slide1 slide2 slide3";
+}
+.scroll .item1 {
+  grid-area: slide1;
+  width: auto;
+  background-color: red;
+}
+.scroll .item2 {
+  grid-area: slide2;
+  width: auto;
+  background-color: red;
+}
+.scroll .item3 {
+  grid-area: slide3;
+  width: auto;
+  background-color: red;
 }/*# sourceMappingURL=styles.css.map */
