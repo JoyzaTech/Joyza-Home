@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["../partials/_navBar.scss","../sass/styles.scss"],"names":[],"mappings":"AACI;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAGJ;EACI;EACA;;AACA;EAII;EACA;EACA;EACA;EACA;EACA;;AARA;EADJ;IAEQ;;;AASJ;EACA;;;AC9BhB;EACI;EACA;;AACA;EACI;EACA;EACA;;AAEJ;EACI;EACA;EACA;;AAEJ;EACI;EACA;EACA","file":"styles.css"}
+=======
+{"version":3,"sourceRoot":"","sources":["../partials/_navBar.scss","../sass/styles.scss"],"names":[],"mappings":"AACI;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAGJ;EACI;EACA;;AACA;EAII;EACA;EACA;EACA;EACA;EACA;;AARA;EADJ;IAEQ;;;AAUR;EACI;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;;;AC7ChB;EACI;EACA","file":"styles.css"}
+>>>>>>> parent of 35a64f3 (Update)

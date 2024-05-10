@@ -31,6 +31,7 @@
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
 .scroll {
   display: grid;
   grid-template-areas: "slide1 slide2 slide3";
@@ -49,4 +50,9 @@
   grid-area: slide3;
   width: auto;
   background-color: red;
+=======
+body {
+  background-color: black;
+  color: white;
+>>>>>>> parent of 35a64f3 (Update)
 }/*# sourceMappingURL=styles.css.map */
