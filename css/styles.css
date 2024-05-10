@@ -46,8 +46,17 @@
   transform: scaleX(1);
 }
 
+@font-face {
+  font-family: "joyza";
+  src: url(../fonts/lexend.ttf);
+}
+@font-face {
+  font-family: "dots";
+  src: url(../fonts/jdot.ttf);
+}
 body {
   background-color: black;
+  font-family: "joyza";
 }
 
 #line {
@@ -58,4 +67,13 @@ body {
 
 h1 {
   color: white;
+  font-weight: normal;
+}
+
+.dotFont {
+  font-family: "dots";
+}
+
+.boldText {
+  font-weight: bolder;
 }/*# sourceMappingURL=styles.css.map */
