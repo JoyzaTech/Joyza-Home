@@ -2,10 +2,7 @@
   display: flex;
   align-items: center;
   height: 80px;
-  border: 2px solid #ccc;
   overflow: hidden;
-  background-color: black;
-  border-radius: 10px;
   padding: 10px;
 }
 #navbar img {
@@ -18,16 +15,16 @@
   text-align: center;
 }
 #navbar #navLinks a {
-  margin: 20px;
-  translate: 10px down;
-  color: white;
+  margin: 15px;
   text-align: center;
+  font-size: 25px;
+  position: relative;
+  color: white;
   text-decoration: none;
-  font-size: 30px;
 }
 @media (max-width: 768px) {
   #navbar #navLinks a {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 #navbar #navLinks a:hover {
