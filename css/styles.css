@@ -131,8 +131,8 @@ h2 {
 
 #sliderGrid {
   display: grid;
-  grid-template-columns: [] auto [] 8% [] 13% [] 13% [] 13% [] 8% [] auto [];
-  grid-template-rows: [] 100px [] 200px [] 100px [];
+  grid-template-columns: [] auto [] 12.5% [] 25% [] 25% [] 25% [] 12.5% [] auto [];
+  grid-template-rows: [] 200px [] 400px [] 200px [];
 }
 #sliderGrid #sliderLeft {
   grid-column: 2/3;
