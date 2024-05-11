@@ -58,4 +58,36 @@ body {
 
 h1 {
   color: white;
+}
+
+#slider {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "back slide1 slide1 slide1 slide2 slide2 slide2 slide3 slide3 slide3 next";
+}
+#slider div img {
+  width: 100%;
+  height: 300px;
+}
+#slider button {
+  width: 100%;
+  height: 300px;
+}
+#slider #back {
+  grid-area: back;
+}
+#slider #next {
+  grid-area: next;
+}
+#slider #item1 {
+  grid-area: slide1;
+}
+#slider #item2 {
+  grid-area: slide2;
+}
+#slider #item3 {
+  grid-area: slide3;
+}
+#slider #item4 {
+  visibility: hidden;
 }/*# sourceMappingURL=styles.css.map */
