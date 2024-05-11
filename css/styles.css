@@ -10,6 +10,14 @@
   width: 75px;
   float: left;
 }
+#navbar a {
+  color: blue;
+  width: 95px;
+  height: 55px;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+}
 #navbar #navLinks {
   margin-left: auto;
   text-align: center;
@@ -57,17 +65,17 @@
 body {
   background-color: black;
   font-family: "joyza";
+  color: white;
+}
+
+h1 {
+  font-weight: normal;
 }
 
 #line {
   width: 100%;
   height: 2px;
   background-color: grey;
-}
-
-h1 {
-  color: white;
-  font-weight: normal;
 }
 
 .dotFont {
