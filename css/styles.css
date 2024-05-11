@@ -10,6 +10,14 @@
   width: 75px;
   float: left;
 }
+#navbar a {
+  color: blue;
+  width: 95px;
+  height: 55px;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+}
 #navbar #navLinks {
   margin-left: auto;
   text-align: center;
@@ -46,8 +54,22 @@
   transform: scaleX(1);
 }
 
+@font-face {
+  font-family: "joyza";
+  src: url(../fonts/lexend.ttf);
+}
+@font-face {
+  font-family: "dots";
+  src: url(../fonts/jdot.ttf);
+}
 body {
   background-color: black;
+  font-family: "joyza";
+  color: white;
+}
+
+h1 {
+  font-weight: normal;
 }
 
 #line {
@@ -56,8 +78,12 @@ body {
   background-color: grey;
 }
 
-h1 {
-  color: white;
+.dotFont {
+  font-family: "dots";
+}
+
+.boldText {
+  font-weight: bolder;
 }
 
 #slider {

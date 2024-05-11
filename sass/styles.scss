@@ -1,14 +1,30 @@
 @use '../partials/navBar';
+@font-face {
+    font-family: "joyza";
+    src: url(../fonts/lexend.ttf);
+    }
+@font-face {
+    font-family: "dots";
+    src: url(../fonts/jdot.ttf);
+    }
 body{
     background-color: black;
+    font-family: 'joyza';
+    color: white;
+}
+h1{
+    font-weight: normal;
 }
 #line{
     width: 100%;
     height: 2px;
     background-color: grey;
 }
-h1{
-    color: white;
+.dotFont{
+    font-family: 'dots';
+}
+.boldText{
+    font-weight: bolder;
 }
 #slider{
     display: grid;
