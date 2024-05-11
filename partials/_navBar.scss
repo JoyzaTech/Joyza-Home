@@ -13,12 +13,16 @@
         }
 
         a{
-            color: blue;
-            width: 95px;
+            width: 100px;
             height: 55px;
             align-content: center;
-            justify-content: center;
+            justify-self: center;
             text-decoration: none;
+            color: white;
+            font-size: larger;
+            img{
+                margin-left: 15px;
+            }
         }
         
         #navLinks {
