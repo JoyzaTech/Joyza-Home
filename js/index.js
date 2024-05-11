@@ -5,43 +5,82 @@ $(document).ready(function(){
 
     let dimensions = [width, height]
 
-    let slide = 3;
 
-    $('#next').click(function(){
-        if(slide < 4){
-            $('#item'+(slide-2)).css('visibility', 'hidden')
-            $('#item'+(slide-2)).css('grid-area', 'none')
-            $('#item'+(slide-1)).css('grid-area', 'slide1')
-            $('#item'+(slide)).css('grid-area', 'slide2')
-            $('#item'+(slide+1)).css('grid-area', 'slide3')
-            $('#item'+(slide+1)).css('visibility', 'visible')
-            $('#item'+slide).css('visibility', 'visible')
-            $('#item'+(slide-1)).css('visiibility', 'visible')
-            slide++
+    let images = [
+        {
+            src: './images/test_img1.jpg',
+            alt: 'test image 1',
+
+        },
+        {
+            src: './images/test_img2.jpg',
+            alt: 'test image 2',
+        },
+        {
+            src: './images/test_img3.jpg',
+            alt: 'test image 3',
+        },
+        {
+            src: './images/test_img4.jpg',
+            alt: 'test image 4',
+        },
+        {
+            src: './images/joyza logo.png',
+            alt: 'test image 5',
+        },
+        {
+            src: './images/lapTop.PNG',
+            alt: 'test image 6',
         }
-        else if(slide == 4){
-            $('#item'+(slide-2)).css('visibility', 'hidden')
-            $('#item'+(slide-2)).css('grid-area', 'none')
-            $('#item'+(slide-1)).css('grid-area', 'slide1')
-            $('#item'+(slide)).css('grid-area', 'slide2')
-            $('#item'+(slide+1)).css('grid-area', 'slide3')
-            $('#item'+(slide+1)).css('visibility', 'visible')
-            $('#item'+slide).css('visibility', 'visible')
-            $('#item'+(slide-1)).css('visiibility', 'visible')
-        }
-    });
-    
-    $('#back').click(function(){
-        if(slide >= 3){
-            $('#item' + slide).css('visibility', 'hidden')
-            $('#item' + (slide-1)).css('visibility', 'visible')
-            $('#item' + (slide-2)).css('visibility', 'visible')
-            $('#item' + (slide-3)).css('visibility', 'visible')
-            $('#item' + slide).css('grid-area', 'none')
-            $('#item' + (slide-1)).css('grid-area', 'slide3')
-            $('#item' + (slide-2)).css('grid-area', 'slide2')
-            $('#item' + (slide-3)).css('grid-area', 'slide1')
-            slide--
-        }
+    ]
+
+    let length = images.length
+
+    $('#sliderLeft').click(function(){
+        slideImages('left')
     })
+    $('#sliderRight').click(function(){
+        slideImages('right')
+    });
+    let currentImages = [images[0], images[1], images[2]]
+    let intImages = function(current){
+        $('#sliderGrid').append(`<img id="picture1" src="${current[0].src}" alt="${current[0].alt}">`)
+        $('#sliderGrid').append(`<img id="picture2" src="${current[1].src}" alt="${current[1].alt}">`)
+        $('#sliderGrid').append(`<img id="picture3" src="${current[2].src}" alt="${current[2].alt}">`)
+    }
+    intImages(currentImages)
+    let num = 1
+    let slideImages = function(direction){
+        switch(direction){
+            case 'left':
+            console.log(num)
+            console.log(num % length)
+            num = (num - 1 + length) % length;
+            try {
+                currentImages = [
+                    images[(num - 1 + length) % length],
+                    images[num],
+                    images[(num + 1) % length]
+                ];
+            } finally {
+                console.log(currentImages);
+                break;
+            }
+        case 'right':
+            console.log(num)
+            console.log(num % length)
+            num = (num + 1) % length;
+            try {
+                currentImages = [
+                    images[(num - 1 + length) % length],
+                    images[num],
+                    images[(num + 1) % length]
+                ];
+            } finally {
+                console.log(currentImages);
+                break;
+            }
+        }
+        intImages(currentImages)
+    }
 });

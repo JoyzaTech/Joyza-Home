@@ -57,36 +57,46 @@ h2{
 .alsoAnnoying{
     margin-bottom: 200px;
 }
-#slider{
+
+#sliderGrid{
     display: grid;
-    width: 100%;
-    grid-template-areas: 'back slide1 slide1 slide1 slide2 slide2 slide2 slide3 slide3 slide3 next';
-    div{
-        img{
-            width: 100%;
-            height: 300px;
-        }
+    grid-template-columns: [] auto [] 8% [] 13% [] 13% [] 13% [] 8% [] auto [];
+    grid-template-rows: [] 100px [] 200px [] 100px  [];
+    #sliderLeft{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        
     }
-    button{
+    #sliderRight{
+        grid-column: 6 / 7;
+        grid-row: 2 / 3;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        
+    }
+    #picture1{
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
         width: 100%;
-        height: 300px;
+        height: 100%;
     }
-    #back{
-        grid-area: back;
+    #picture2{
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+        width: 100%;
+        height: 100%;
     }
-    #next{
-        grid-area: next;
-    }
-    #item1{
-        grid-area: slide1;
-    }
-    #item2{
-        grid-area: slide2;
-    }
-    #item3{
-        grid-area: slide3;
-    }
-    #item4{
-        visibility: hidden;
-    }
-}
+    #picture3{
+        grid-column: 5 / 6;
+        grid-row: 2 / 3;
+        width: 100%;
+        height: 100%;
+    }}
