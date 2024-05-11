@@ -1,4 +1,6 @@
 @use '../partials/navBar';
+$blue : #2dabff;
+$background : #161616;
 @font-face {
     font-family: "joyza";
     src: url(../fonts/lexend.ttf);
@@ -8,7 +10,7 @@
     src: url(../fonts/jdot.ttf);
     }
 body{
-    background-color: black;
+    background-color: $background;
     font-family: 'joyza';
     color: white;
 }
@@ -25,6 +27,12 @@ h1{
 }
 .boldText{
     font-weight: bolder;
+}
+.blueText{
+    color: $blue;
+}
+.navText{
+    width: 115px;
 }
 #slider{
     display: grid;

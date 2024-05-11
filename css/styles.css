@@ -11,13 +11,16 @@
   float: left;
 }
 #navbar a {
-  width: 115px;
+  width: 100px;
   height: 55px;
   align-content: center;
-  justify-content: center;
+  justify-self: center;
   text-decoration: none;
   color: white;
   font-size: larger;
+}
+#navbar a img {
+  margin-left: 15px;
 }
 #navbar #navLinks {
   margin-left: auto;
@@ -64,7 +67,7 @@
   src: url(../fonts/jdot.ttf);
 }
 body {
-  background-color: black;
+  background-color: #161616;
   font-family: "joyza";
   color: white;
 }
@@ -85,6 +88,14 @@ h1 {
 
 .boldText {
   font-weight: bolder;
+}
+
+.blueText {
+  color: #2dabff;
+}
+
+.navText {
+  width: 115px;
 }
 
 #slider {
