@@ -16,6 +16,8 @@ body{
 }
 h1{
     font-weight: normal;
+    font-size: 70px;
+    margin-left: 100px;
 }
 #line{
     width: 100%;
@@ -31,8 +33,12 @@ h1{
 .blueText{
     color: $blue;
 }
-.navText{
-    width: 115px;
+.mainImg{
+    float: right;
+    width: 700px;
+    height: 400px;
+    margin-right: 80px;
+    margin-top: 35px;
 }
 #slider{
     display: grid;

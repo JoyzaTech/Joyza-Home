@@ -22,6 +22,9 @@
 #navbar a img {
   margin-left: 15px;
 }
+#navbar a h1 {
+  margin-left: 0px;
+}
 #navbar #navLinks {
   margin-left: auto;
   text-align: center;
@@ -74,6 +77,8 @@ body {
 
 h1 {
   font-weight: normal;
+  font-size: 70px;
+  margin-left: 100px;
 }
 
 #line {
@@ -94,8 +99,12 @@ h1 {
   color: #2dabff;
 }
 
-.navText {
-  width: 115px;
+.mainImg {
+  float: right;
+  width: 700px;
+  height: 400px;
+  margin-right: 80px;
+  margin-top: 35px;
 }
 
 #slider {
