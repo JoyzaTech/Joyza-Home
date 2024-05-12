@@ -27,12 +27,9 @@ $(document).ready(function(){
         {
             src: './images/joyza logo.png',
             alt: 'test image 5',
-        },
-        {
-            src: './images/lapTop.PNG',
-            alt: 'test image 6',
         }
     ]
+    console.log(60 / width)
 
     let length = images.length
 
@@ -44,9 +41,9 @@ $(document).ready(function(){
     });
     let currentImages = [images[0], images[1], images[2]]
     let intImages = function(current){
-        $('#sliderGrid').append(`<img id="picture1" src="${current[0].src}" alt="${current[0].alt}">`)
-        $('#sliderGrid').append(`<img id="picture2" src="${current[1].src}" alt="${current[1].alt}">`)
-        $('#sliderGrid').append(`<img id="picture3" src="${current[2].src}" alt="${current[2].alt}">`)
+        $('#sliderGrid').append(`<img class="pictures" id="picture1" src="${current[0].src}" alt="${current[0].alt}">`)
+        $('#sliderGrid').append(`<img class="pictures" id="picture2" src="${current[1].src}" alt="${current[1].alt}">`)
+        $('#sliderGrid').append(`<img class="pictures" id="picture3" src="${current[2].src}" alt="${current[2].alt}">`)
     }
     intImages(currentImages)
     let num = 1
@@ -82,5 +79,6 @@ $(document).ready(function(){
             }
         }
         intImages(currentImages)
+        console.log(width)
     }
 });

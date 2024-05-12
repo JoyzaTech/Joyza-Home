@@ -38,30 +38,36 @@ h1{
     width: 635px;
     height: 375px;
     margin-top: 70px;
-    margin-right: 120px;
+    margin-right: 10%;
     margin-bottom: 200px;
 }
 h2{
     font-weight: normal;
     font-size: 60px;
-    margin-left: 170px;
+    margin-left: 12%;
     margin-block-start: 0em;
     margin-block-end: 0em;
+    float: left;
+}
+img {
+    pointer-events: none;
 }
 .annoying{
-    margin-top: 15px;
+    margin-top: 1.5%;
 }
 .annoying2{
-    margin-top: 150px;
+    margin-top: 15%;
 }
 .alsoAnnoying{
-    margin-bottom: 200px;
+    margin-bottom: 18%;
 }
 
 #sliderGrid{
+    float: left;
     display: grid;
-    grid-template-columns: [] auto [] 12.5% [] 25% [] 25% [] 25% [] 12.5% [] auto [];
+    grid-template-columns: [] auto [] 10% [] 25% [] 25% [] 25% [] 10% [] auto [];
     grid-template-rows: [] 200px [] 400px [] 200px [];
+    column-gap: 1%;
     #sliderLeft{
         grid-column: 2 / 3;
         grid-row: 2 / 3;
@@ -99,4 +105,8 @@ h2{
         grid-row: 2 / 3;
         width: 100%;
         height: 100%;
-    }}
+    }
+    .pictures{
+        border-radius: 6px;
+    }
+}
