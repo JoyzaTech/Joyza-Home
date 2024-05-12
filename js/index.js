@@ -6,25 +6,18 @@ $(document).ready(function () {
 
     let images = [
         {
-            src: "./images/test_img1.jpg",
+            src: "./images/1st.png",
             alt: "test image 1",
         },
         {
-            src: "./images/test_img2.jpg",
+            src: "./images/2nd.png",
             alt: "test image 2",
         },
         {
-            src: "./images/test_img3.jpg",
+            src: "./images/3rd.png",
             alt: "test image 3",
         },
-        {
-            src: "./images/test_img4.jpg",
-            alt: "test image 4",
-        },
-        {
-            src: "./images/joyza logo.png",
-            alt: "test image 5",
-        },
+
     ];
 
     let length = images.length;
