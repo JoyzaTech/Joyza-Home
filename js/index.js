@@ -30,6 +30,7 @@ $(document).ready(function () {
     });
     let currentImages = [images[0], images[1], images[2]];
     let intImages = function (current) {
+        $(".pictures").remove();
         $("#sliderGrid").append(
             `<img class="pictures" id="picture1" src="${current[0].src}" alt="${current[0].alt}">`
         );
