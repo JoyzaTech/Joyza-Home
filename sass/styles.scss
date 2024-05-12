@@ -39,7 +39,7 @@ h1{
     height: 375px;
     margin-top: 70px;
     margin-right: 10%;
-    margin-bottom: 200px;
+    margin-bottom: 20%;
 }
 h2{
     font-weight: normal;
@@ -61,6 +61,14 @@ img {
 .alsoAnnoying{
     margin-bottom: 18%;
 }
+
+@media screen and (max-width: 1200px) {
+    .mainImg{
+        display: none;
+    }
+
+}
+
 
 #sliderGrid{
     float: left;
@@ -86,7 +94,6 @@ img {
         display: flex;
         align-self: center;
         justify-self: center;
-        
     }
     #picture1{
         grid-column: 3 / 4;
