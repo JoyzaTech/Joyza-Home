@@ -143,30 +143,42 @@ img {
     display: none;
   }
   h2 {
+    display: flex;
+    justify-content: center;
     font-weight: normal;
     font-size: 50px;
-    margin-left: 35%;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    float: left;
+    width: 100%;
+    margin: 0%;
   }
   .annoying {
     margin-top: 1.5%;
   }
   .annoying2 {
     margin-top: 1.5%;
-    margin-left: 36%;
   }
   .alsoAnnoying {
-    margin-bottom: 5%;
-    margin-left: 38%;
+    margin-bottom: 15px;
+  }
+  body #sliderGrid {
+    grid-template-columns: [] auto [] 18% [] 0% [] 45% [] 0% [] 18% [] auto [];
+    grid-template-rows: [] 2% [] 400px [] 2% [];
+    margin-left: 9.5%;
+  }
+  body #sliderGrid #picture1 {
+    display: none;
+  }
+  body #sliderGrid #picture3 {
+    display: none;
   }
 }
 #sliderGrid {
   float: left;
   display: grid;
   grid-template-columns: [] auto [] 10% [] 25% [] 25% [] 25% [] 10% [] auto [];
-  grid-template-rows: [] 200px [] 400px [] 200px [];
+  grid-template-rows: [] 130px [] 400px [] 130px [];
+  float: none;
+  margin: 0 auto;
+  width: 80%;
   -moz-column-gap: 1%;
        column-gap: 1%;
 }
