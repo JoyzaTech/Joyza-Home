@@ -28,6 +28,11 @@
                 margin-left: 0px;
                 font-size: default;
             }
+            @media (max-width: 630px) {
+                .mainText{
+                    font-size: 45px;
+                }
+            }
         }
         
         #navLinks {

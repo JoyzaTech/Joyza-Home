@@ -26,6 +26,11 @@
   margin-left: 0px;
   font-size: default;
 }
+@media (max-width: 630px) {
+  #navbar a .mainText {
+    font-size: 45px;
+  }
+}
 #navbar #navLinks {
   margin-left: auto;
   text-align: center;
