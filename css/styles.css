@@ -159,7 +159,7 @@ img {
     display: flex;
     justify-content: center;
     font-weight: normal;
-    font-size: 50px;
+    font-size: 80px;
     width: 100%;
     margin: 0%;
   }
@@ -174,9 +174,9 @@ img {
   }
   body #sliderGrid {
     grid-template-rows: [] 2% [] 400px [] 2% [];
-    -moz-column-gap: 0%;
-         column-gap: 0%;
-    width: 60%;
+    -moz-column-gap: 10%;
+         column-gap: 10%;
+    width: 80%;
   }
   body #sliderGrid #picture1 {
     display: none;
