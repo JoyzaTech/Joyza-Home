@@ -29,7 +29,6 @@ $(document).ready(function(){
             alt: 'test image 5',
         }
     ]
-    console.log(60 / width)
 
     let length = images.length
 
@@ -78,6 +77,8 @@ $(document).ready(function(){
                 break;
             }
         }
+        width = window.innerWidth
+        height = window.innerHeight
         intImages(currentImages)
         console.log(width)
     }
