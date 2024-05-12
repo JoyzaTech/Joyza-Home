@@ -138,6 +138,19 @@ img {
   margin-bottom: 1.5%;
 }
 
+.sliderButton {
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.5s;
+}
+
+.sliderButton:hover {
+  color: #2dabff;
+}
+
 @media screen and (max-width: 1200px) {
   .mainImg {
     display: none;
@@ -163,6 +176,8 @@ img {
     grid-template-columns: [] auto [] 18% [] 0% [] 45% [] 0% [] 18% [] auto [];
     grid-template-rows: [] 2% [] 400px [] 2% [];
     margin-left: 9.5%;
+    -moz-column-gap: 0%;
+         column-gap: 0%;
   }
   body #sliderGrid #picture1 {
     display: none;
