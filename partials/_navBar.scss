@@ -28,7 +28,7 @@
                 margin-left: 0px;
                 font-size: default;
             }
-            @media (max-width: 630px) {
+            @media (max-width: 650px) {
                 .mainText{
                     font-size: 45px;
                 }
@@ -36,11 +36,19 @@
         }
         
         #navLinks {
+            #productPage{
+                border-radius: 30px;
+                background-color: #2dabff;
+
+            }
             margin-left: auto;
             text-align: center;
             a {
-                @media (max-width: 768px) {
+                @media (max-width: 800px) {
                     font-size: 20px;
+                }
+                @media (max-width: 750px) {
+                    font-size: 15px;
                 }
                 margin: 15px;
                 text-align: center;

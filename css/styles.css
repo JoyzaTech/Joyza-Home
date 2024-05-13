@@ -26,7 +26,7 @@
   margin-left: 0px;
   font-size: default;
 }
-@media (max-width: 630px) {
+@media (max-width: 650px) {
   #navbar a .mainText {
     font-size: 45px;
   }
@@ -34,6 +34,10 @@
 #navbar #navLinks {
   margin-left: auto;
   text-align: center;
+}
+#navbar #navLinks #productPage {
+  border-radius: 30px;
+  background-color: #2dabff;
 }
 #navbar #navLinks a {
   margin: 15px;
@@ -43,9 +47,14 @@
   color: white;
   text-decoration: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   #navbar #navLinks a {
     font-size: 20px;
+  }
+}
+@media (max-width: 750px) {
+  #navbar #navLinks a {
+    font-size: 15px;
   }
 }
 #navbar #navLinks a:hover {
@@ -238,6 +247,7 @@ img {
 }
 
 .footer {
+  margin-top: 10px;
   background-color: #222222;
   display: flex;
   text-align: center;
