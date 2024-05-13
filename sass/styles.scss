@@ -172,11 +172,11 @@ img {
         color: white;
         text-decoration: none;
     }
-    
+
     a:hover {
         color: white;
     }
-    
+
     a::before {
         content: "";
         position: absolute;
@@ -189,7 +189,7 @@ img {
         transform: scaleX(0);
         transition: transform 0.3s ease;
     }
-    
+
     a:hover::before {
         transform: scaleX(1);
     }
