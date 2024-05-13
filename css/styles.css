@@ -182,7 +182,7 @@ img {
     margin-bottom: 15px;
   }
   body #sliderGrid {
-    grid-template-rows: [] 2% [] 400px [] 2% [];
+    grid-template-rows: [] 2% [] 400px [] 20px [];
     -moz-column-gap: 10%;
          column-gap: 10%;
     width: 80%;
