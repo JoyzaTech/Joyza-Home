@@ -235,4 +235,42 @@ img {
   border-radius: 0px;
   width: 300px;
   height: 400px;
+}
+
+.footer {
+  background-color: #222222;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.footer a {
+  margin: 15px;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .footer a {
+    font-size: 20px;
+  }
+}
+.footer a:hover {
+  color: white;
+}
+.footer a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #2dabff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.footer a:hover::before {
+  transform: scaleX(1);
 }/*# sourceMappingURL=styles.css.map */
