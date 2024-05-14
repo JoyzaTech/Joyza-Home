@@ -183,6 +183,10 @@ img {
     font-size: 20px;
   }
 }
+.custom_app:hover {
+  background-color: darkred;
+}
+
 @media screen and (max-width: 1200px) {
   #subHeading {
     font-size: 40px;
@@ -308,7 +312,24 @@ img {
   left: 0;
   margin: auto;
 }
-.design #buttons button, .development #buttons button {
+.design #buttons .open_jos, .development #buttons .open_jos {
+  background-color: #2dabff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  height: 50px;
+}
+.design #buttons .open_jos:hover, .development #buttons .open_jos:hover {
+  background-color: #00548b;
+}
+.design #buttons .custom_app, .development #buttons .custom_app {
   background-color: red;
   border: none;
   color: white;
@@ -321,6 +342,9 @@ img {
   cursor: pointer;
   border-radius: 25px;
   height: 50px;
+}
+.design #buttons .custom_app:hover, .development #buttons .custom_app:hover {
+  background-color: darkred;
 }
 
 .footer {
