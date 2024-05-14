@@ -33,6 +33,19 @@
                     font-size: 45px;
                 }
             }
+            @media (max-width: 580px) {
+                .mainText{
+                    font-size: 15px;
+                }
+                img{
+                    margin-left: 0px;
+                }
+                h1{
+                    margin-left: 3px;
+                    width: 45px;
+
+                }
+            }
         }
         
         #navLinks {
@@ -57,6 +70,12 @@
                 position: relative;
                 color: white;
                 text-decoration: none;
+                @media (max-width: 630px) {
+                    img{
+                        margin-left: 5px;
+                    }
+
+                }
             }
             
             a:hover {

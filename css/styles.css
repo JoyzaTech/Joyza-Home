@@ -31,6 +31,18 @@
     font-size: 45px;
   }
 }
+@media (max-width: 580px) {
+  #navbar a .mainText {
+    font-size: 15px;
+  }
+  #navbar a img {
+    margin-left: 0px;
+  }
+  #navbar a h1 {
+    margin-left: 3px;
+    width: 45px;
+  }
+}
 #navbar #navLinks {
   margin-left: auto;
   text-align: center;
@@ -56,6 +68,11 @@
 @media (max-width: 750px) {
   #navbar #navLinks a {
     font-size: 15px;
+  }
+}
+@media (max-width: 630px) {
+  #navbar #navLinks a img {
+    margin-left: 5px;
   }
 }
 #navbar #navLinks a:hover {
@@ -184,7 +201,8 @@ img {
   }
   body #sliderGrid {
     grid-template-rows: [] 2% [] 400px [] 20px [];
-    column-gap: 10%;
+    -moz-column-gap: 10%;
+         column-gap: 10%;
     width: 80%;
   }
   body #sliderGrid #picture1 {
@@ -199,7 +217,8 @@ img {
   grid-template-rows: [] 20% [] 60% [] 230px [];
   margin: 0 auto;
   width: 90%;
-  column-gap: 4%;
+  -moz-column-gap: 4%;
+       column-gap: 4%;
 }
 #sliderGrid #sliderLeft {
   grid-column: 1/2;
@@ -213,7 +232,8 @@ img {
 #sliderGrid #sliderRight {
   grid-column: 5/6;
   grid-row: 2/3;
-  column-width: 3em;
+  -moz-column-width: 3em;
+       column-width: 3em;
   margin-block-start: 0em;
   margin-block-end: 0em;
   display: flex;
