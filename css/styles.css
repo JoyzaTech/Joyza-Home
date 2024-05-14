@@ -201,8 +201,7 @@ img {
   }
   body #sliderGrid {
     grid-template-rows: [] 2% [] 400px [] 20px [];
-    -moz-column-gap: 10%;
-         column-gap: 10%;
+    column-gap: 10%;
     width: 80%;
   }
   body #sliderGrid #picture1 {
@@ -217,8 +216,7 @@ img {
   grid-template-rows: [] 20% [] 60% [] 230px [];
   margin: 0 auto;
   width: 90%;
-  -moz-column-gap: 4%;
-       column-gap: 4%;
+  column-gap: 4%;
 }
 #sliderGrid #sliderLeft {
   grid-column: 1/2;
@@ -232,8 +230,7 @@ img {
 #sliderGrid #sliderRight {
   grid-column: 5/6;
   grid-row: 2/3;
-  -moz-column-width: 3em;
-       column-width: 3em;
+  column-width: 3em;
   margin-block-start: 0em;
   margin-block-end: 0em;
   display: flex;
