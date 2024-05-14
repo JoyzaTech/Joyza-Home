@@ -261,27 +261,55 @@ img {
   height: 400px;
 }
 
-.design {
+.design, .development {
   margin: auto;
   width: 70%;
   background-color: #222222;
   height: 300px;
   border-radius: 50px;
   padding: 80px;
+  position: relative;
 }
-.design #heading {
+.design #heading, .development #heading {
   font-size: 60px;
   color: #2dabff;
 }
-.design p {
+.design p, .development p {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   text-align: left;
   font-size: 20px;
 }
-.design img {
+.design img, .development img {
   float: right;
   translate: 0 -100px;
+}
+.design #buttons, .development #buttons {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 50%;
+  height: 80px;
+  bottom: 0;
+  top: 85%;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.design #buttons button, .development #buttons button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  height: 50px;
 }
 
 .footer {
