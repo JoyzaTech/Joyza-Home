@@ -155,6 +155,35 @@ img {
         height: 400px;
     }
 }
+
+.design {
+    margin: auto;
+    width: 70%;
+    background-color: #222222;
+    height: 300px;
+    border-radius: 50px;
+    padding: 80px;
+
+    #heading {
+        font-size: 60px;
+        color: $blue;
+    }
+
+    p {
+        margin: {
+            top: 0;
+            bottom: 10px;
+        };
+        text-align: left;
+        font-size: 20px;
+    }
+
+    img {
+        float: right;
+        translate: 0 -100px;
+    }
+}
+
 .footer {
     margin-top: 10px;
     background-color: #222222;

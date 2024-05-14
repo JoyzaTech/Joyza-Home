@@ -184,7 +184,6 @@ img {
   }
   body #sliderGrid {
     grid-template-rows: [] 2% [] 400px [] 20px [];
-    -moz-column-gap: 10%;
     column-gap: 10%;
     width: 80%;
   }
@@ -243,6 +242,29 @@ img {
   border-radius: 0px;
   width: 300px;
   height: 400px;
+}
+
+.design {
+  margin: auto;
+  width: 70%;
+  background-color: #222222;
+  height: 300px;
+  border-radius: 50px;
+  padding: 80px;
+}
+.design #heading {
+  font-size: 60px;
+  color: #2dabff;
+}
+.design p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+.design img {
+  float: right;
+  translate: 0 -100px;
 }
 
 .footer {
