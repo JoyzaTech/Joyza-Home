@@ -73,7 +73,15 @@ img {
     color: $blue;
 }
 
+@media screen and (max-width: 1070px) {
+    #heading{
+        font-size: 20px;
+    }
+}
 @media screen and (max-width: 1200px) {
+    #subHeading{
+        font-size: 40px;
+    }
     .mainImg {
         display: none;
     }
