@@ -1,8 +1,11 @@
 $(document).ready(function () {
+    const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     let width = window.innerWidth;
     let height = window.innerHeight;
-
     let dimensions = [width, height];
+    let imageSizes = [[document.getElementById('picture1').style.width, document.getElementById('picture1').style.height],
+                    [document.getElementById('picture2').style.width, document.getElementById('picture2').style.height],
+                    [document.getElementById('picture3').style.width, document.getElementById('picture3').style.height],]
 
     let images = [
         {
@@ -78,6 +81,21 @@ $(document).ready(function () {
         width = window.innerWidth;
         height = window.innerHeight;
         intImages(currentImages);
-        console.log(width);
     };
+    let ticScreen = function () {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        dimensions = [width, height];
+        console.log(dimensions);
+        imageSizes = [[document.getElementById('picture1').style.width, document.getElementById('picture1').style.height],
+        [document.getElementById('picture2').style.width, document.getElementById('picture2').style.height],
+        [document.getElementById('picture3').style.width, document.getElementById('picture3').style.height],]
+        console.log(imageSizes);
+    }
+    let mainScreen = async function () {
+    while (true) {
+        await sleep(500)
+        ticScreen()
+    }}
+    mainScreen()
 });
