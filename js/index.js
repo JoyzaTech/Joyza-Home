@@ -3,9 +3,6 @@ $(document).ready(function () {
     let width = window.innerWidth;
     let height = window.innerHeight;
     let dimensions = [width, height];
-    let imageSizes = [[$('#picture1').width(), $('#picture1').height()],
-                    [$('#picture2').width(), $('#picture2').height()],
-                    [$('#picture3').width(), $('#picture3').height()],]
 
     let images = [
         {
@@ -20,6 +17,14 @@ $(document).ready(function () {
             src: "./images/3rd.png",
             alt: "test image 3",
         },
+        {
+            src: "./images/joyza logo.png",
+            alt: "test image 4",
+        },
+        {
+            src: "./images/test_img4.jpg",
+            alt: "test image 5",
+        }
 
     ];
 
@@ -44,18 +49,12 @@ $(document).ready(function () {
         $("#sliderGrid").append(
             `<img class="pictures" id="picture3" src="${current[2].src}" alt="${current[2].alt}">`
         );
-        $("#sliderGrid").append(
-            `<div id="postPicture"></div>`
-        );
-        $("#sliderGrid").append(
-            `<div id="nextPicture"></div>`
-        );
     };
     intImages(currentImages);
     let num = 1;
     let getNextImages = function (direction) {
         switch (direction) {
-            case "left":
+            case "right":
                 console.log(num);
                 console.log(num % length);
                 num = (num - 1 + length) % length;
@@ -69,8 +68,7 @@ $(document).ready(function () {
                     console.log(currentImages);
                     break;
                 }
-            case "right":
-                currentImages;
+            case "left":
                 console.log(num);
                 console.log(num % length);
                 num = (num + 1) % length;
@@ -97,7 +95,10 @@ $(document).ready(function () {
 
         }
         else{
-            $('#picture1').animate({ left: `-=${imageSize.width + 35}px` }, 300);
+            $("#sliderGrid").append(
+                `<img class="pictures" id="picture3" src="${currentImages[2].src}" alt="${currentImages[2].alt}">`
+            );
+            $('#picture1').animate({ left: `${left.left - $('#picture1').position().left}px` }, 300);
             $('#picture2').animate({ left: `-=${imageSize.width + 35}px` }, 300);
             $('#picture3').animate({ left: `-=${imageSize.width + 35}px` }, 300);
         }
@@ -107,9 +108,12 @@ $(document).ready(function () {
 
             }
             else{
+                $("#sliderGrid").append(
+                    `<img class="pictures" id="picture1" src="${currentImages[0].src}" alt="${currentImages[0].alt}">`
+                );
                 $('#picture1').animate({ left: `+=${imageSize.width + 35}px` }, 300);
                 $('#picture2').animate({ left: `+=${imageSize.width + 35}px` }, 300);
-                $('#picture3').animate({ left: `+=${imageSize.width + 35}px` }, 300);
+                $('#picture3').animate({ left: `${right.left - $('#picture3').position().left}px` }, 300);
             }
 
     }
@@ -119,16 +123,22 @@ $(document).ready(function () {
         height = window.innerHeight;
         dimensions = [width, height];
         console.log(dimensions);
+        left = $('#postContent').position()
+        right = $('#nextContent').position()
         imageSize = {
             width: Math.round($('#picture1').width()),
             height: Math.round($('#picture1').height())
         }
+        console.log(left, right);
         console.log(imageSize);
+        console.log($('#picture1').position(), $('#picture3').position());
+        console.log($('#picture3').position());
     }
     let mainScreen = async function () {
     while (true) {
         await sleep(15000)
         ticScreen()
     }}
+    ticScreen()
     mainScreen()
 });
