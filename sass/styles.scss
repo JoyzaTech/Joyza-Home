@@ -51,13 +51,13 @@ h2 {
 img {
     pointer-events: none;
 }
-.annoying {
+.imagine {
     margin-top: 15%;
 }
-.annoying2 {
+.create {
     margin-top: 1.5%;
 }
-.alsoAnnoying {
+.share {
     margin-bottom: 1.5%;
 }
 .sliderButton {
@@ -98,13 +98,13 @@ img {
         width: 100%;
         margin: 0%;
     }
-    .annoying {
+    .imagine {
         margin-top: 1.5%;
     }
-    .annoying2 {
+    .create {
         margin-top: 1.5%;
     }
-    .alsoAnnoying {
+    .share {
         margin-bottom: 15px;
     }
     body #sliderGrid {
@@ -185,7 +185,12 @@ img {
 }
 
 .design, .development {
-    margin: auto;
+    margin: {
+        right: auto;
+        left: auto;
+        top: 30px;
+        bottom: 30px;
+    };
     width: 70%;
     background-color: #222222;
     height: 300px;
@@ -205,6 +210,7 @@ img {
         };
         text-align: left;
         font-size: 20px;
+        font-family: "joyza";
     }
 
     img {
@@ -281,7 +287,9 @@ img {
     }
 
     a:hover {
-        color: white;
+        color: $blue;
+        font-size: 28px;
+        font-family: 'dots';
     }
 
     a::before {

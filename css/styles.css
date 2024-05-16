@@ -76,7 +76,11 @@
   }
 }
 #navbar #navLinks a:hover {
-  color: white;
+  font-size: 28px;
+  font-family: "dots";
+}
+#navbar #navLinks .links:hover {
+  color: #2dabff;
 }
 #navbar #navLinks a::before {
   content: "";
@@ -153,15 +157,15 @@ img {
   pointer-events: none;
 }
 
-.annoying {
+.imagine {
   margin-top: 15%;
 }
 
-.annoying2 {
+.create {
   margin-top: 1.5%;
 }
 
-.alsoAnnoying {
+.share {
   margin-bottom: 1.5%;
 }
 
@@ -202,19 +206,18 @@ img {
     width: 100%;
     margin: 0%;
   }
-  .annoying {
+  .imagine {
     margin-top: 1.5%;
   }
-  .annoying2 {
+  .create {
     margin-top: 1.5%;
   }
-  .alsoAnnoying {
+  .share {
     margin-bottom: 15px;
   }
   body #sliderGrid {
     grid-template-rows: [] 2% [] 400px [] 20px [];
-    -moz-column-gap: 10%;
-         column-gap: 10%;
+    column-gap: 10%;
     width: 80%;
   }
   body #sliderGrid #picture1 {
@@ -229,8 +232,7 @@ img {
   grid-template-rows: [] 20% [] 60% [] 170px [];
   margin: 0 auto;
   width: 69%;
-  -moz-column-gap: 35px;
-       column-gap: 35px;
+  column-gap: 35px;
 }
 #sliderGrid #sliderLeft {
   grid-column: 1/2;
@@ -245,8 +247,7 @@ img {
 #sliderGrid #sliderRight {
   grid-column: 5/6;
   grid-row: 2/3;
-  -moz-column-width: 3em;
-       column-width: 3em;
+  column-width: 3em;
   margin-block-start: 0em;
   margin-block-end: 0em;
   display: flex;
@@ -292,7 +293,10 @@ img {
 }
 
 .design, .development {
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
   width: 70%;
   background-color: #222222;
   height: 300px;
@@ -309,6 +313,7 @@ img {
   margin-bottom: 15px;
   text-align: left;
   font-size: 20px;
+  font-family: "joyza";
 }
 .design img, .development img {
   float: right;
@@ -383,7 +388,9 @@ img {
   }
 }
 .footer a:hover {
-  color: white;
+  color: #2dabff;
+  font-size: 28px;
+  font-family: "dots";
 }
 .footer a::before {
   content: "";
