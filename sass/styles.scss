@@ -278,3 +278,157 @@ img {
         transform: scaleX(1);
     }
 }
+#about_us{
+    margin: auto;
+    width: 70%;
+    background-color: #222222;
+    height: 300px;
+    border-radius: 50px;
+    padding: 80px;
+    position: relative;
+
+    #heading {
+        font-size: 60px;
+        color: $blue;
+    }
+
+    p {
+        margin: {
+            top: 0;
+            bottom: 15px;
+        };
+        text-align: left;
+        font-size: 20px;
+    }
+
+    img {
+        float: right;
+        translate: 0 -100px;
+    }
+
+    #buttons {
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        position: absolute;
+        width: 50%;
+        height: 80px;
+        bottom: 0;
+        top: 85%;
+        right: 0;
+        left: 0;
+        margin: auto;
+
+        .open_jos {
+            background-color: #2dabff;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 25px;
+            height: 50px;
+            &:hover{
+                background-color: #00548b;
+            }
+        }
+        .custom_app{
+            background-color: red;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 25px;
+            height: 50px;
+            &:hover{
+                background-color: darkred;
+            }
+        }
+    }
+}
+#development{
+    margin: auto;
+    width: 70%;
+    background-color: #222222;
+    height: 300px;
+    border-radius: 50px;
+    padding: 80px;
+    position: relative;
+
+    #heading {
+        font-size: 60px;
+        color: $blue;
+    }
+
+    p {
+        margin: {
+            top: 0;
+            bottom: 15px;
+        };
+        text-align: left;
+        font-size: 20px;
+    }
+
+    img {
+        float: right;
+        translate: 0 -100px;
+    }
+
+    #buttons_two {
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        position: absolute;
+        width: 50%;
+        height: 80px;
+        bottom: 0;
+        top: 85%;
+        right: 0;
+        left: 0;
+        margin: auto;
+
+        .trailer {
+            background-color: #2dabff;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 25px;
+            height: 50px;
+            &:hover{
+                background-color: #00548b;
+            }
+        }
+        .community{
+            background-color: gray;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 25px;
+            height: 50px;
+            &:hover{
+                background-color: rgb(57, 57, 57);
+            }
+        }
+    }
+}

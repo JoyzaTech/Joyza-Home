@@ -373,4 +373,146 @@ img {
 }
 .footer a:hover::before {
   transform: scaleX(1);
+}
+
+#about_us {
+  margin: auto;
+  width: 70%;
+  background-color: #222222;
+  height: 300px;
+  border-radius: 50px;
+  padding: 80px;
+  position: relative;
+}
+#about_us #heading {
+  font-size: 60px;
+  color: #2dabff;
+}
+#about_us p {
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 20px;
+}
+#about_us img {
+  float: right;
+  translate: 0 -100px;
+}
+#about_us #buttons {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 50%;
+  height: 80px;
+  bottom: 0;
+  top: 85%;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+#about_us #buttons .open_jos {
+  background-color: #2dabff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  height: 50px;
+}
+#about_us #buttons .open_jos:hover {
+  background-color: #00548b;
+}
+#about_us #buttons .custom_app {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  height: 50px;
+}
+#about_us #buttons .custom_app:hover {
+  background-color: darkred;
+}
+
+#development {
+  margin: auto;
+  width: 70%;
+  background-color: #222222;
+  height: 300px;
+  border-radius: 50px;
+  padding: 80px;
+  position: relative;
+}
+#development #heading {
+  font-size: 60px;
+  color: #2dabff;
+}
+#development p {
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 20px;
+}
+#development img {
+  float: right;
+  translate: 0 -100px;
+}
+#development #buttons_two {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 50%;
+  height: 80px;
+  bottom: 0;
+  top: 85%;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+#development #buttons_two .trailer {
+  background-color: #2dabff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  height: 50px;
+}
+#development #buttons_two .trailer:hover {
+  background-color: #00548b;
+}
+#development #buttons_two .community {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  height: 50px;
+}
+#development #buttons_two .community:hover {
+  background-color: rgb(57, 57, 57);
 }/*# sourceMappingURL=styles.css.map */
