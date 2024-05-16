@@ -419,6 +419,9 @@ img {
   padding: 80px;
   position: relative;
 }
+#about_us h1 {
+  color: #2dabff;
+}
 #about_us #heading {
   font-size: 60px;
   color: #2dabff;
