@@ -18,14 +18,6 @@ $(document).ready(function () {
             src: "./images/3rd.png",
             alt: "test image 3",
         },
-        {
-            src: "./images/joyza logo.png",
-            alt: "test image 4",
-        },
-        {
-            src: "./images/test_img4.jpg",
-            alt: "test image 5",
-        }
 
     ];
 
