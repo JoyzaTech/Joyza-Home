@@ -16,6 +16,7 @@ body {
     background-position: center;
     font-family: "joyza";
     color: white;
+    margin: 0px;
 }
 h1 {
     font-weight: normal;
@@ -117,70 +118,80 @@ img {
         }
     }
 }
-#sliderGrid {
-    display: grid;
-    grid-template-rows: [] 20% [] 60% [] 170px [];
-    margin: 0 auto;
-    width: 69%;
-    column-gap: 35px;
-    #sliderLeft {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        margin-block-start: 0em;
-        margin-block-end: 0em;
+    #gridContainer{
         display: flex;
-        align-self: center;
-        justify-self: center;
-        z-index: 10;
+        justify-content: space-between;
+        width: 100%;
+        #postContent{
+            background-color: #161616;
+            z-index: 3;
+            width: 16%;
+        }
+        #nextContent{
+            background-color: #161616;
+            z-index: 3;
+            width: 16%;
+        }
+        #sliderGrid {
+            display: grid;
+            grid-template-rows: [] 20% [] 60% [] 170px [];
+            width: 70%;
+            column-gap: 55px;
+        #sliderLeft {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            display: flex;
+            align-self: center;
+            z-index: 10;
     }
-    #sliderRight {
-        grid-column: 5 / 6;
-        grid-row: 2 / 3;
-        column-width: 3em;
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-        display: flex;
-        align-self: center;
-        justify-self: center;
-        z-index: 10;
+        #sliderRight {
+            grid-column: 5 / 6;
+            grid-row: 2 / 3;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            display: flex;
+            align-self: center;
+            z-index: 10;
     }
-    #picture1 {
+    #picture0{
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         width: 100%;
         height: 100%;
     }
-    #picture2 {
-        grid-column: 3 / 4;
-        grid-row: 2 / 3;
-        width: 100%;
-        height: 100%;
+        #picture1 {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            width: 100%;
+            height: 100%;
     }
-    #picture3 {
-        grid-column: 4 / 5;
-        grid-row: 2 / 3;
-        width: 100%;
-        height: 100%;
+        #picture2 {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            width: 100%;
+            height: 100%;
     }
-    #nextPicture{
-        grid-column: 5 / 6;
-        grid-row: 2 / 3;
-        z-index: 3;
-        background-color: none;
+        #picture3 {
+            grid-column: 4 / 5;
+            grid-row: 2 / 3;
+            width: 100%;
+            height: 100%;
     }
-    #postPicture{
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        z-index: 3;
-        background-color: none;
+        #picture4{
+            grid-column: 4 / 5;
+            grid-row: 2 / 3;
+            width: 100%;
+            height: 100%;
+        }
+        .pictures {
+            position: relative;
+            border-radius: 0px;
+            width: 300px;
+            height: 400px;
     }
-    .pictures {
-        position: relative;
-        border-radius: 0px;
-        width: 300px;
-        height: 400px;
-    }
-}
+}}
 
 .design, .development {
     margin: {
