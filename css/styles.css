@@ -76,7 +76,11 @@
   }
 }
 #navbar #navLinks a:hover {
-  color: white;
+  font-size: 28px;
+  font-family: "dots";
+}
+#navbar #navLinks .links:hover {
+  color: #2dabff;
 }
 #navbar #navLinks a::before {
   content: "";
@@ -103,7 +107,9 @@
   src: url(../fonts/jdot.ttf);
 }
 body {
-  background-color: #161616;
+  background-image: url(../images/Animated\ Shape\ \(3\).svg);
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: "joyza";
   color: white;
 }
@@ -153,15 +159,15 @@ img {
   pointer-events: none;
 }
 
-.annoying {
+.imagine {
   margin-top: 15%;
 }
 
-.annoying2 {
+.create {
   margin-top: 1.5%;
 }
 
-.alsoAnnoying {
+.share {
   margin-bottom: 1.5%;
 }
 
@@ -182,7 +188,15 @@ img {
   background-color: darkred;
 }
 
+@media screen and (max-width: 1070px) {
+  #heading {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 1200px) {
+  #subHeading {
+    font-size: 40px;
+  }
   .mainImg {
     display: none;
   }
@@ -194,13 +208,13 @@ img {
     width: 100%;
     margin: 0%;
   }
-  .annoying {
+  .imagine {
     margin-top: 1.5%;
   }
-  .annoying2 {
+  .create {
     margin-top: 1.5%;
   }
-  .alsoAnnoying {
+  .share {
     margin-bottom: 15px;
   }
   body #sliderGrid {
@@ -217,10 +231,10 @@ img {
 }
 #sliderGrid {
   display: grid;
-  grid-template-rows: [] 20% [] 60% [] 230px [];
+  grid-template-rows: [] 20% [] 60% [] 170px [];
   margin: 0 auto;
-  width: 90%;
-  column-gap: 4%;
+  width: 69%;
+  column-gap: 35px;
 }
 #sliderGrid #sliderLeft {
   grid-column: 1/2;
@@ -230,6 +244,7 @@ img {
   display: flex;
   align-self: center;
   justify-self: center;
+  z-index: 10;
 }
 #sliderGrid #sliderRight {
   grid-column: 5/6;
@@ -240,6 +255,7 @@ img {
   display: flex;
   align-self: center;
   justify-self: center;
+  z-index: 10;
 }
 #sliderGrid #picture1 {
   grid-column: 2/3;
@@ -259,16 +275,33 @@ img {
   width: 100%;
   height: 100%;
 }
+#sliderGrid #nextPicture {
+  grid-column: 5/6;
+  grid-row: 2/3;
+  z-index: 3;
+  background-color: none;
+}
+#sliderGrid #postPicture {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  z-index: 3;
+  background-color: none;
+}
 #sliderGrid .pictures {
+  position: relative;
   border-radius: 0px;
   width: 300px;
   height: 400px;
 }
 
 .design, .development {
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
   width: 70%;
   background-color: #222222;
+  opacity: 0.85;
   height: 300px;
   border-radius: 50px;
   padding: 80px;
@@ -357,7 +390,9 @@ img {
   }
 }
 .footer a:hover {
-  color: white;
+  color: #2dabff;
+  font-size: 28px;
+  font-family: "dots";
 }
 .footer a::before {
   content: "";

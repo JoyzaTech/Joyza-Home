@@ -79,8 +79,14 @@
             }
             
             a:hover {
-                color: white;
+                font-size: 28px;
+                font-family: 'dots';
             }
+            
+            .links:hover {
+                color: $blue;
+            }
+
             
             a::before {
                 content: "";

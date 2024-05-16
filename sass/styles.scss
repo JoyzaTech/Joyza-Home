@@ -10,7 +10,9 @@ $background: #161616;
     src: url(../fonts/jdot.ttf);
 }
 body {
-    background-color: $background;
+    background-image: url(../images/Animated\ Shape\ \(3\).svg);
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: "joyza";
     color: white;
 }
@@ -51,13 +53,13 @@ h2 {
 img {
     pointer-events: none;
 }
-.annoying {
+.imagine {
     margin-top: 15%;
 }
-.annoying2 {
+.create {
     margin-top: 1.5%;
 }
-.alsoAnnoying {
+.share {
     margin-bottom: 1.5%;
 }
 .sliderButton {
@@ -78,7 +80,15 @@ img {
     }
 }
 
+@media screen and (max-width: 1070px) {
+    #heading{
+        font-size: 20px;
+    }
+}
 @media screen and (max-width: 1200px) {
+    #subHeading{
+        font-size: 40px;
+    }
     .mainImg {
         display: none;
     }
@@ -90,13 +100,13 @@ img {
         width: 100%;
         margin: 0%;
     }
-    .annoying {
+    .imagine {
         margin-top: 1.5%;
     }
-    .annoying2 {
+    .create {
         margin-top: 1.5%;
     }
-    .alsoAnnoying {
+    .share {
         margin-bottom: 15px;
     }
     body #sliderGrid {
@@ -113,10 +123,10 @@ img {
 }
 #sliderGrid {
     display: grid;
-    grid-template-rows: [] 20% [] 60% [] 230px [];
+    grid-template-rows: [] 20% [] 60% [] 170px [];
     margin: 0 auto;
-    width: 90%;
-    column-gap: 4%;
+    width: 69%;
+    column-gap: 35px;
     #sliderLeft {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
@@ -125,6 +135,7 @@ img {
         display: flex;
         align-self: center;
         justify-self: center;
+        z-index: 10;
     }
     #sliderRight {
         grid-column: 5 / 6;
@@ -135,6 +146,7 @@ img {
         display: flex;
         align-self: center;
         justify-self: center;
+        z-index: 10;
     }
     #picture1 {
         grid-column: 2 / 3;
@@ -154,7 +166,20 @@ img {
         width: 100%;
         height: 100%;
     }
+    #nextPicture{
+        grid-column: 5 / 6;
+        grid-row: 2 / 3;
+        z-index: 3;
+        background-color: none;
+    }
+    #postPicture{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        z-index: 3;
+        background-color: none;
+    }
     .pictures {
+        position: relative;
         border-radius: 0px;
         width: 300px;
         height: 400px;
@@ -162,9 +187,15 @@ img {
 }
 
 .design, .development {
-    margin: auto;
+    margin: {
+        right: auto;
+        left: auto;
+        top: 30px;
+        bottom: 30px;
+    };
     width: 70%;
     background-color: #222222;
+    opacity: 0.85;
     height: 300px;
     border-radius: 50px;
     padding: 80px;
@@ -258,7 +289,9 @@ img {
     }
 
     a:hover {
-        color: white;
+        color: $blue;
+        font-size: 28px;
+        font-family: 'dots';
     }
 
     a::before {
