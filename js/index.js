@@ -3,6 +3,7 @@ $(document).ready(function () {
     let width = window.innerWidth;
     let height = window.innerHeight;
     let dimensions = [width, height];
+    let delay = false
 
     let images = [
         {
@@ -31,15 +32,25 @@ $(document).ready(function () {
     let length = images.length;
 
     $("#sliderLeft").click(function () {
+        if (!delay) {
         getNextImages("left");
-        console.log('left');
+        console.log('left');}
+        else{
+            
+        }
     });
     $("#sliderRight").click(function () {
-        getNextImages("right");
-        console.log('right');
+        if (delay==false) {
+            delay = true;
+            getNextImages("right");
+            console.log('right');
+        }else{
+            
+        }
     });
     let currentImages = [images[0], images[1], images[2]];
     let intImages = function () {
+        $('.pictures').remove()
         $("#sliderGrid").append(
             `<img class="pictures" id="picture1" src="${currentImages[0].src}" alt="${currentImages[0].alt}">`
         );
@@ -87,35 +98,42 @@ $(document).ready(function () {
         height = window.innerHeight;
         ticScreen()
         transition(direction)
+        delay = false
     };
-    let transition = function (direction) {
+    let transition = async function (direction) {
         switch(direction){
-        case "left":
-        if (width <= 1200){
-
-        }
-        else{
-            $("#sliderGrid").append(
-                `<img class="pictures" id="picture4" src="${currentImages[2].src}" alt="${currentImages[2].alt}">`
-            );
-            $('#picture1').animate({ left: `${left.left - $('#picture1').position().left}px` }, 300);
-            $('#picture2').animate({ left: `-=${imageSize.width + 35}px` }, 300);
-            $('#picture3').animate({ left: `-=${imageSize.width + 35}px` }, 300);
-        }
-        break;
+                    case "left":
+                        if (width <= 1200) {
+                            
+                        } else {
+                            $("#sliderGrid").append(
+                                `<img class="pictures" id="picture4" src="${currentImages[2].src}" alt="${currentImages[2].alt}">`
+                            )
+                            $('#picture4').css({left: rightSide.left - $('#picture3').position().left})
+                            .animate({left: `+=${$('#picture3').position().left - rightSide.left}px`}, 300)
+                            $('#picture1').animate({ left: `${leftSide.left - $('#picture1').position().left}px` }, 300);
+                            $('#picture2').animate({ left: `-=${imageSize.width + 55}px` }, 300);
+                            $('#picture3').animate({ left: `-=${imageSize.width + 55}px` }, 300);
+                        }
+                        await sleep(300);
+                        intImages()
+                        break;
         case "right":
             if (width <= 1200){
-
             }
             else{
                 $("#sliderGrid").append(
                     `<img class="pictures" id="picture0" src="${currentImages[0].src}" alt="${currentImages[0].alt}">`
-                ).css(`left : ${(left.left - $('#picture1').position().left)}`).animate({ left: `${$('#picture1').position().left}px` }, 300);
+                )
+                $('#picture0').css({left:leftSide.left - $('#picture1').position().left})
+                .animate({ left: `+=${$('#picture1').position().left - leftSide.left}px` }, 300)
                 $('#picture1').animate({ left: `+=${imageSize.width + 55}px` }, 300);
                 $('#picture2').animate({ left: `+=${imageSize.width + 55}px` }, 300);
-                $('#picture3').animate({ left: `${right.left - $('#picture3').position().left}px` }, 300);
+                $('#picture3').animate({ left: `${rightSide.left - $('#picture3').position().left}px` }, 300);
             }
-
+            await sleep(300);
+            intImages()
+            break;
     }
     }
     let ticScreen = function () {
@@ -123,20 +141,20 @@ $(document).ready(function () {
         height = window.innerHeight;
         dimensions = [width, height];
         console.log(dimensions);
-        left = $('#postContent').position()
-        right = $('#nextContent').position()
+        leftSide = $('#postContent').position()
+        rightSide = $('#nextContent').position()
         imageSize = {
             width: Math.round($('#picture1').width()),
             height: Math.round($('#picture1').height())
         }
-        console.log(left, right);
+        console.log(leftSide, rightSide);
         console.log(imageSize);
         console.log($('#picture1').position(), $('#picture3').position());
         console.log($('#picture3').position());
     }
     let mainScreen = async function () {
     while (true) {
-        await sleep(15000)
+        await sleep(10000)
         ticScreen()
     }}
     ticScreen()
