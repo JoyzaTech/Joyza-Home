@@ -39,15 +39,15 @@ $(document).ready(function () {
         console.log('right');
     });
     let currentImages = [images[0], images[1], images[2]];
-    let intImages = function (current) {
+    let intImages = function () {
         $("#sliderGrid").append(
-            `<img class="pictures" id="picture1" src="${current[0].src}" alt="${current[0].alt}">`
+            `<img class="pictures" id="picture1" src="${currentImages[0].src}" alt="${currentImages[0].alt}">`
         );
         $("#sliderGrid").append(
-            `<img class="pictures" id="picture2" src="${current[1].src}" alt="${current[1].alt}">`
+            `<img class="pictures" id="picture2" src="${currentImages[1].src}" alt="${currentImages[1].alt}">`
         );
         $("#sliderGrid").append(
-            `<img class="pictures" id="picture3" src="${current[2].src}" alt="${current[2].alt}">`
+            `<img class="pictures" id="picture3" src="${currentImages[2].src}" alt="${currentImages[2].alt}">`
         );
     };
     intImages(currentImages);
@@ -96,7 +96,7 @@ $(document).ready(function () {
         }
         else{
             $("#sliderGrid").append(
-                `<img class="pictures" id="picture3" src="${currentImages[2].src}" alt="${currentImages[2].alt}">`
+                `<img class="pictures" id="picture4" src="${currentImages[2].src}" alt="${currentImages[2].alt}">`
             );
             $('#picture1').animate({ left: `${left.left - $('#picture1').position().left}px` }, 300);
             $('#picture2').animate({ left: `-=${imageSize.width + 35}px` }, 300);
@@ -109,10 +109,10 @@ $(document).ready(function () {
             }
             else{
                 $("#sliderGrid").append(
-                    `<img class="pictures" id="picture1" src="${currentImages[0].src}" alt="${currentImages[0].alt}">`
-                );
-                $('#picture1').animate({ left: `+=${imageSize.width + 35}px` }, 300);
-                $('#picture2').animate({ left: `+=${imageSize.width + 35}px` }, 300);
+                    `<img class="pictures" id="picture0" src="${currentImages[0].src}" alt="${currentImages[0].alt}">`
+                ).css(`left : ${(left.left - $('#picture1').position().left)}`).animate({ left: `${$('#picture1').position().left}px` }, 300);
+                $('#picture1').animate({ left: `+=${imageSize.width + 55}px` }, 300);
+                $('#picture2').animate({ left: `+=${imageSize.width + 55}px` }, 300);
                 $('#picture3').animate({ left: `${right.left - $('#picture3').position().left}px` }, 300);
             }
 
