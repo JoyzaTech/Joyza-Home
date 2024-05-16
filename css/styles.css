@@ -110,6 +110,7 @@ body {
   background-image: url(../images/Animated\ Shape\ \(3\).svg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   font-family: "joyza";
   color: white;
 }
@@ -118,12 +119,6 @@ h1 {
   font-weight: normal;
   font-size: 60px;
   margin-left: 100px;
-}
-
-#line {
-  width: 100%;
-  height: 2px;
-  background-color: grey;
 }
 
 .dotFont {
@@ -300,8 +295,10 @@ img {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 70%;
-  background-color: #222222;
-  opacity: 0.85;
+  background-image: url(../images/Circuit\ Board.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 300px;
   border-radius: 50px;
   padding: 80px;
@@ -336,6 +333,7 @@ img {
 }
 .design #buttons .open_jos, .development #buttons .open_jos {
   background-color: #2dabff;
+  opacity: 0.85;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -353,6 +351,7 @@ img {
 }
 .design #buttons .custom_app, .development #buttons .custom_app {
   background-color: red;
+  opacity: 0.85;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -371,7 +370,7 @@ img {
 
 .footer {
   margin-top: 10px;
-  background-color: #222222;
+  background-color: none;
   display: flex;
   text-align: center;
   justify-content: space-around;
