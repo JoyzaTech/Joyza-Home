@@ -412,7 +412,10 @@ img {
 #about_us {
   margin: auto;
   width: 70%;
-  background-color: #222222;
+  background-image: url(../images/Circuit\ Board.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 300px;
   border-radius: 50px;
   padding: 80px;
@@ -486,7 +489,10 @@ img {
 #development {
   margin: auto;
   width: 70%;
-  background-color: #222222;
+  background-image: url(../images/Circuit\ Board.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 300px;
   border-radius: 50px;
   padding: 80px;
@@ -537,7 +543,7 @@ img {
   background-color: #00548b;
 }
 #development #buttons_two .community {
-  background-color: gray;
+  background-color: rgb(57, 57, 57);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -551,5 +557,5 @@ img {
   height: 50px;
 }
 #development #buttons_two .community:hover {
-  background-color: rgb(57, 57, 57);
+  background-color: rgb(37, 37, 37);
 }/*# sourceMappingURL=styles.css.map */
