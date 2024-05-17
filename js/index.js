@@ -113,6 +113,7 @@ $(document).ready(function () {
                         break;
         case "right":
             if (width <= 1200){
+                
             }
             else{
                 $("#sliderGrid").append(
