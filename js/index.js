@@ -103,9 +103,10 @@ $(document).ready(function () {
                             )
                             $('#picture4').css({left: rightSide.left - $('#picture3').position().left})
                             .animate({left: `+=${$('#picture3').position().left - rightSide.left}px`}, 300)
-                            $('#picture1').animate({ left: `${leftSide.left - $('#picture1').position().left}px` }, 300);
+                            $('#picture1').animate({ left: `${leftSide.left - $('#picture1').position().left}px`,opacity: 0}, 300)
                             $('#picture2').animate({ left: `-=${imageSize.width + 55}px` }, 300);
                             $('#picture3').animate({ left: `-=${imageSize.width + 55}px` }, 300);
+                            
                         }
                         await sleep(300);
                         intImages()
@@ -121,7 +122,7 @@ $(document).ready(function () {
                 .animate({ left: `+=${$('#picture1').position().left - leftSide.left}px` }, 300)
                 $('#picture1').animate({ left: `+=${imageSize.width + 55}px` }, 300);
                 $('#picture2').animate({ left: `+=${imageSize.width + 55}px` }, 300);
-                $('#picture3').animate({ left: `${rightSide.left - $('#picture3').position().left}px` }, 300);
+                $('#picture3').animate({ left: `${rightSide.left - $('#picture3').position().left}px`, opacity: 0}, 300);
             }
             await sleep(300);
             intImages()
