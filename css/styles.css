@@ -215,8 +215,7 @@ img {
   }
   body #sliderGrid {
     grid-template-rows: [] 2% [] 400px [] 20px [];
-    -moz-column-gap: 10%;
-         column-gap: 10%;
+    column-gap: 10%;
     width: 80%;
   }
   body #sliderGrid #picture1 {
@@ -243,8 +242,7 @@ img {
   display: grid;
   grid-template-rows: [] 20% [] 60% [] 170px [];
   width: 65%;
-  -moz-column-gap: 55px;
-       column-gap: 55px;
+  column-gap: 55px;
 }
 #gridContainer #sliderGrid #sliderLeft {
   grid-column: 1/2;
@@ -335,10 +333,10 @@ img {
   text-align: center;
   justify-content: space-evenly;
   position: absolute;
-  width: 50%;
+  width: 40%;
   height: 80px;
   bottom: 0;
-  top: 85%;
+  top: 70%;
   right: 0;
   left: 0;
   margin: auto;
@@ -347,16 +345,17 @@ img {
   background-color: #2dabff;
   opacity: 0.85;
   border: none;
+  width: 200px;
+  height: 75px;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 24px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 25px;
-  height: 50px;
 }
 .design #buttons .open_jos:hover, .development #buttons .open_jos:hover {
   background-color: #00548b;
@@ -365,16 +364,17 @@ img {
   background-color: red;
   opacity: 0.85;
   border: none;
+  width: 200px;
+  height: 75px;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 24px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 25px;
-  height: 50px;
 }
 .design #buttons .custom_app:hover, .development #buttons .custom_app:hover {
   background-color: darkred;
@@ -433,8 +433,13 @@ img {
   padding: 80px;
   position: relative;
 }
+#about_us .dotFont {
+  margin-bottom: 15px;
+}
 #about_us h1 {
   color: #2dabff;
+  text-align: left;
+  margin-left: 0;
 }
 #about_us #heading {
   font-size: 60px;
@@ -450,53 +455,6 @@ img {
   float: right;
   translate: 0 -100px;
 }
-#about_us #buttons {
-  display: flex;
-  text-align: center;
-  justify-content: space-evenly;
-  position: absolute;
-  width: 50%;
-  height: 80px;
-  bottom: 0;
-  top: 85%;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
-#about_us #buttons .open_jos {
-  background-color: #2dabff;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 25px;
-  height: 50px;
-}
-#about_us #buttons .open_jos:hover {
-  background-color: #00548b;
-}
-#about_us #buttons .custom_app {
-  background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 25px;
-  height: 50px;
-}
-#about_us #buttons .custom_app:hover {
-  background-color: darkred;
-}
 
 #development {
   margin: auto;
@@ -509,6 +467,12 @@ img {
   border-radius: 50px;
   padding: 80px;
   position: relative;
+}
+#development h1 {
+  margin-left: 0;
+}
+#development .dotFont {
+  margin-bottom: 15px;
 }
 #development #heading {
   font-size: 60px;
@@ -529,10 +493,10 @@ img {
   text-align: center;
   justify-content: space-evenly;
   position: absolute;
-  width: 50%;
+  width: 40%;
   height: 80px;
   bottom: 0;
-  top: 85%;
+  top: 70%;
   right: 0;
   left: 0;
   margin: auto;
@@ -541,15 +505,16 @@ img {
   background-color: #2dabff;
   border: none;
   color: white;
+  width: 200px;
+  height: 75px;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 24px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 25px;
-  height: 50px;
 }
 #development #buttons_two .trailer:hover {
   background-color: #00548b;
@@ -558,15 +523,16 @@ img {
   background-color: rgb(57, 57, 57);
   border: none;
   color: white;
+  width: 200px;
+  height: 75px;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 24px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 25px;
-  height: 50px;
 }
 #development #buttons_two .community:hover {
   background-color: rgb(37, 37, 37);
