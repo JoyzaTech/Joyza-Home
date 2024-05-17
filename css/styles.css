@@ -231,12 +231,10 @@ img {
   width: 100%;
 }
 #gridContainer #postContent {
-  background-color: #161616;
   z-index: 3;
   width: 16%;
 }
 #gridContainer #nextContent {
-  background-color: #161616;
   z-index: 3;
   width: 16%;
 }

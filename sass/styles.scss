@@ -118,17 +118,17 @@ img {
         }
     }
 }
+
+
     #gridContainer{
         display: flex;
         justify-content: space-between;
         width: 100%;
         #postContent{
-            background-color: #161616;
             z-index: 3;
             width: 16%;
         }
         #nextContent{
-            background-color: #161616;
             z-index: 3;
             width: 16%;
         }
