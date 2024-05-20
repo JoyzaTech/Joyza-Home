@@ -306,14 +306,14 @@ img {
   margin-left: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 70%;
+  width: 75%;
   background-image: url(../images/Circuit\ Board.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 300px;
   border-radius: 50px;
-  padding: 80px;
+  padding: 50px;
   position: relative;
 }
 .questions h1 {
@@ -331,7 +331,6 @@ img {
   width: 200px;
   height: 75px;
   color: white;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -341,6 +340,31 @@ img {
 }
 .questions button:hover {
   background-color: rgb(92, 91, 91);
+}
+
+.contact {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 80%;
+  background-image: url(../images/Circuit\ Board.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 220px;
+  border-radius: 50px;
+  padding: 20px;
+  position: relative;
+}
+.contact h1 {
+  text-align: left;
+  color: #2dabff;
+  margin-left: 5%;
+}
+.contact p {
+  font-size: 30px;
+  margin-left: 5%;
 }
 
 .design, .development {
@@ -377,7 +401,7 @@ img {
   text-align: center;
   justify-content: space-evenly;
   position: absolute;
-  width: 40%;
+  width: 45%;
   height: 80px;
   bottom: 0;
   top: 70%;
@@ -392,12 +416,10 @@ img {
   width: 200px;
   height: 75px;
   color: white;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 24px;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 25px;
 }
@@ -411,12 +433,10 @@ img {
   width: 200px;
   height: 75px;
   color: white;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 24px;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 25px;
 }
@@ -537,7 +557,7 @@ img {
   text-align: center;
   justify-content: space-evenly;
   position: absolute;
-  width: 40%;
+  width: 45%;
   height: 80px;
   bottom: 0;
   top: 70%;
@@ -551,12 +571,10 @@ img {
   color: white;
   width: 200px;
   height: 75px;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 24px;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 25px;
 }
@@ -569,12 +587,10 @@ img {
   color: white;
   width: 200px;
   height: 75px;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 24px;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 25px;
 }
