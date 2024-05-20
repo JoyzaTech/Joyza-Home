@@ -301,6 +301,48 @@ img {
   height: 400px;
 }
 
+.questions {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 70%;
+  background-image: url(../images/Circuit\ Board.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  border-radius: 50px;
+  padding: 80px;
+  position: relative;
+}
+.questions h1 {
+  text-align: left;
+  color: #2dabff;
+  margin-left: 0;
+}
+.questions p {
+  font-size: 24px;
+}
+.questions button {
+  background-color: grey;
+  opacity: 0.85;
+  border: none;
+  width: 200px;
+  height: 75px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 28px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.questions button:hover {
+  background-color: rgb(92, 91, 91);
+}
+
 .design, .development {
   margin-right: auto;
   margin-left: auto;
@@ -308,7 +350,7 @@ img {
   margin-bottom: 30px;
   width: 70%;
   background-image: url(../images/Circuit\ Board.svg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 300px;
@@ -427,7 +469,7 @@ img {
   margin: auto;
   width: 70%;
   background-image: url(../images/Circuit\ Board.svg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 300px;
@@ -462,7 +504,7 @@ img {
   margin: auto;
   width: 70%;
   background-image: url(../images/Circuit\ Board.svg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 300px;
