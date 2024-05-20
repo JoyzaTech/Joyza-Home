@@ -111,9 +111,9 @@ img {
     .share {
         margin-bottom: 15px;
     }
-    body #sliderGrid {
+    #sliderGrid {
         grid-template-rows: [] 2% [] 400px [] 20px [];
-        column-gap: 10%;
+        column-gap: 1%;
         width: 80%;
         #picture1 {
             display: none;
@@ -214,6 +214,9 @@ img {
     .mainImg {
         display: none;
     }
+    .otherImg{
+        display: none;
+    }
     h2 {
         display: flex;
         justify-content: center;
@@ -232,7 +235,9 @@ img {
         margin-bottom: 15px;
     }
     #gridContainer #sliderGrid {
-        width: 60%;
+        grid-template-rows: [] 2% [] 400px [] 20px [];
+        column-gap: 1%;
+        width: 80%;
         #picture1 {
             display: none;
         }
@@ -240,7 +245,7 @@ img {
             display: none;
         }
     }
-} 
+}
 .questions {
     margin: {
         right: auto;

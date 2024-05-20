@@ -90,7 +90,7 @@ $(document).ready(function () {
                     `<img class="pictures" id='picture5' src="${currentImages[1].src}" alt="${currentImages[1].alt}">`
                 )
                 $('#picture5').css({left: width / 100 * 25}).animate({left:0}, 300)
-                $('#picture2').animate({left:-(width / 100 * 32), opacity: 0}, 300)
+                $('#picture2').animate({left:-(width / 100 * 25), opacity: 0}, 300)
             } else {
                 $("#sliderGrid").append(
                     `<img class="pictures" id="picture4" src="${currentImages[2].src}" alt="${currentImages[2].alt}">`
@@ -111,7 +111,7 @@ $(document).ready(function () {
                     `<img class="pictures" id='picture5' src="${currentImages[1].src}" alt="${currentImages[1].alt}">`
                 )
                 $('#picture5').css({left: -(width / 100 * 25)}).animate({left:0}, 300)
-                $('#picture2').animate({left: (width / 100 * 32), opacity: 0}, 300)
+                $('#picture2').animate({left: (width / 100 * 25), opacity: 0}, 300)
             }
             else{
                 $("#sliderGrid").append(
