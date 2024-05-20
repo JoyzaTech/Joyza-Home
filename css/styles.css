@@ -166,6 +166,45 @@ img {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 1200px) {
+  #subHeading {
+    font-size: 40px;
+  }
+  .mainImg {
+    display: none;
+  }
+  .otherImg {
+    display: none;
+  }
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 80px;
+    width: 100%;
+    margin: 0%;
+  }
+  .imagine {
+    margin-top: 1.5%;
+  }
+  .create {
+    margin-top: 1.5%;
+  }
+  .share {
+    margin-bottom: 15px;
+  }
+  body #sliderGrid {
+    grid-template-rows: [] 2% [] 400px [] 20px [];
+    column-gap: 10%;
+    width: 80%;
+  }
+  body #sliderGrid #picture1 {
+    display: none;
+  }
+  body #sliderGrid #picture3 {
+    display: none;
+  }
+}
 #gridContainer {
   display: flex;
   justify-content: space-between;
@@ -289,12 +328,12 @@ img {
   margin-left: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 75%;
+  width: 75vw;
   background-image: url(../images/Circuit\ Board.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 300px;
+  height: 30vw;
   border-radius: 50px;
   padding: 50px;
   position: relative;
@@ -304,20 +343,25 @@ img {
   color: #2dabff;
   margin-left: 0;
 }
+.questions #heading {
+  text-align: left;
+  color: #2dabff;
+  font-size: 4vw;
+}
 .questions p {
-  font-size: 24px;
+  font-size: 2vw;
 }
 .questions button {
   background-color: grey;
   opacity: 0.85;
   border: none;
-  width: 200px;
-  height: 75px;
+  width: 20vw;
+  height: 10vw;
   color: white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 28px;
+  font-size: 3vw;
   cursor: pointer;
   border-radius: 25px;
 }
@@ -330,12 +374,12 @@ img {
   margin-left: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 80%;
+  width: 80vw;
   background-image: url(../images/Circuit\ Board.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 220px;
+  height: 22vw;
   border-radius: 50px;
   padding: 20px;
   position: relative;
@@ -345,35 +389,41 @@ img {
   color: #2dabff;
   margin-left: 5%;
 }
+.contact #heading {
+  text-align: left;
+  color: #2dabff;
+  margin-left: 5%;
+  font-size: 6vw;
+}
 .contact p {
-  font-size: 30px;
+  font-size: 4vw;
   margin-left: 5%;
 }
 
 .design, .development {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 70%;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  width: 70vw;
   background-image: url(../images/Circuit\ Board.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 300px;
+  height: 30vw;
   border-radius: 50px;
   padding: 80px;
   position: relative;
 }
 .design #heading, .development #heading {
-  font-size: 60px;
+  font-size: 6vw;
   color: #2dabff;
 }
 .design p, .development p {
   margin-top: 0;
   margin-bottom: 15px;
   text-align: left;
-  font-size: 22px;
+  font-size: 3vw;
 }
 .design img, .development img {
   float: right;
@@ -465,12 +515,12 @@ img {
 
 #about_us {
   margin: auto;
-  width: 70%;
+  width: 70vw;
   background-image: url(../images/Circuit\ Board.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 300px;
+  height: 30vw;
   border-radius: 50px;
   padding: 80px;
   position: relative;
@@ -484,14 +534,14 @@ img {
   margin-left: 0;
 }
 #about_us #heading {
-  font-size: 60px;
+  font-size: 6vw;
   color: #2dabff;
 }
 #about_us p {
   margin-top: 0;
   margin-bottom: 15px;
   text-align: left;
-  font-size: 28px;
+  font-size: 4vw;
 }
 #about_us img {
   float: right;
@@ -500,12 +550,12 @@ img {
 
 #development {
   margin: auto;
-  width: 70%;
+  width: 70vw;
   background-image: url(../images/Circuit\ Board.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 300px;
+  height: 30vw;
   border-radius: 50px;
   padding: 80px;
   position: relative;
@@ -518,14 +568,14 @@ img {
   margin-bottom: 15px;
 }
 #development #heading {
-  font-size: 60px;
+  font-size: 6vw;
   color: #2dabff;
 }
 #development p {
   margin-top: 0;
   margin-bottom: 15px;
   text-align: left;
-  font-size: 28px;
+  font-size: 4vw;
 }
 #development img {
   float: right;

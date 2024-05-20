@@ -84,6 +84,46 @@ img {
         font-size: 20px;
     }
 }
+@media screen and (max-width: 1200px) {
+    #subHeading{
+        font-size: 40px;
+    }
+    .mainImg {
+        display: none;
+    }
+    .otherImg{
+        display: none;
+    }
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-weight: normal;
+        font-size: 80px;
+        width: 100%;
+        margin: 0%;
+    }
+    .imagine {
+        margin-top: 1.5%;
+    }
+    .create {
+        margin-top: 1.5%;
+    }
+    .share {
+        margin-bottom: 15px;
+    }
+    body #sliderGrid {
+        grid-template-rows: [] 2% [] 400px [] 20px [];
+        column-gap: 10%;
+        width: 80%;
+        #picture1 {
+            display: none;
+        }
+        #picture3 {
+            display: none;
+        }
+    }
+}
+
 
     #gridContainer{
         display: flex;
@@ -208,12 +248,12 @@ img {
         top: 30px;
         bottom: 30px;
     };
-    width: 75%;
+    width: 75vw;
     background-image: url(../images/Circuit\ Board.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 300px;
+    height: 30vw;
     border-radius: 50px;
     padding: 50px;
     position: relative;
@@ -222,20 +262,25 @@ img {
         color: $blue;
         margin-left: 0;
     }
+    #heading{
+        text-align: left;
+        color: $blue;
+        font-size: 4vw;
+    }
     p {
-        font-size: 24px;
+        font-size: 2vw;
     }
     button {
         background-color: grey;
             opacity: 0.85;
             border: none;
-            width: 200px;
-            height: 75px;
+            width: 20vw;
+            height: 10vw;
             color: white;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 28px;
+            font-size: 3vw;
             cursor: pointer;
             border-radius: 25px;
             &:hover{
@@ -251,12 +296,12 @@ img {
         top: 30px;
         bottom: 30px;
     };
-    width: 80%;
+    width: 80vw;
     background-image: url(../images/Circuit\ Board.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 220px;
+    height: 22vw;
     border-radius: 50px;
     padding: 20px;
     position: relative;
@@ -265,8 +310,14 @@ img {
         color: $blue;
         margin-left: 5%;
     }
+    #heading{
+        text-align: left;
+        color: $blue;
+        margin-left: 5%;
+        font-size: 6vw;
+    }
     p {
-        font-size: 30px;
+        font-size: 4vw;
         margin-left: 5%;
     }
 }
@@ -275,20 +326,21 @@ img {
     margin: {
         right: auto;
         left: auto;
-        top: 30px;
-        bottom: 30px;
+        top: 3vw;
+        bottom: 3vw;
     };
-    width: 70%;
+    width: 70vw;
     background-image: url(../images/Circuit\ Board.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 300px;
+    height: 30vw;
     border-radius: 50px;
     padding: 80px;
     position: relative;
+    
     #heading {
-        font-size: 60px;
+        font-size: 6vw;
         color: $blue;
     }
 
@@ -298,7 +350,7 @@ img {
             bottom: 15px;
         };
         text-align: left;
-        font-size: 22px;
+        font-size: 3vw;
     }
 
     img {
@@ -397,12 +449,12 @@ img {
 
 #about_us{
     margin: auto;
-    width: 70%;
+    width: 70vw;
     background-image: url(../images/Circuit\ Board.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 300px;
+    height: 30vw;
     border-radius: 50px;
     padding: 80px;
     position: relative;
@@ -417,7 +469,7 @@ img {
         margin-left: 0;
     }
     #heading {
-        font-size: 60px;
+        font-size: 6vw;
         color: $blue;
     }
 
@@ -427,7 +479,7 @@ img {
             bottom: 15px;
         };
         text-align: left;
-        font-size: 28px;
+        font-size: 4vw;
     }
 
     img {
@@ -438,12 +490,12 @@ img {
 }
 #development{
     margin: auto;
-    width: 70%;
+    width: 70vw;
     background-image: url(../images/Circuit\ Board.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 300px;
+    height: 30vw;
     border-radius: 50px;
     padding: 80px;
     position: relative;
@@ -458,7 +510,7 @@ img {
     }
 
     #heading {
-        font-size: 60px;
+        font-size: 6vw;
         color: $blue;
     }
 
@@ -468,7 +520,7 @@ img {
             bottom: 15px;
         };
         text-align: left;
-        font-size: 28px;
+        font-size: 4vw;
     }
 
     img {
