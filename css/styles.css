@@ -26,23 +26,6 @@
   margin-left: 0px;
   font-size: default;
 }
-@media (max-width: 650px) {
-  #navbar a .mainText {
-    font-size: 45px;
-  }
-}
-@media (max-width: 580px) {
-  #navbar a .mainText {
-    font-size: 15px;
-  }
-  #navbar a img {
-    margin-left: 0px;
-  }
-  #navbar a h1 {
-    margin-left: 3px;
-    width: 45px;
-  }
-}
 #navbar #navLinks {
   margin-left: auto;
   text-align: center;
@@ -55,20 +38,10 @@
 #navbar #navLinks a {
   margin: 15px;
   text-align: center;
-  font-size: 25px;
+  font-size: 2vw;
   position: relative;
   color: white;
   text-decoration: none;
-}
-@media (max-width: 800px) {
-  #navbar #navLinks a {
-    font-size: 20px;
-  }
-}
-@media (max-width: 750px) {
-  #navbar #navLinks a {
-    font-size: 15px;
-  }
 }
 @media (max-width: 630px) {
   #navbar #navLinks a img {
@@ -76,7 +49,7 @@
   }
 }
 #navbar #navLinks a:hover {
-  font-size: 28px;
+  font-size: 2.5vw;
   font-family: "dots";
 }
 #navbar #navLinks .links:hover {
@@ -140,6 +113,10 @@ h1 {
   height: 375px;
   margin-top: 10%;
   margin-right: 10%;
+}
+
+.mainText {
+  font-size: 3.5vw;
 }
 
 h2 {
@@ -392,19 +369,14 @@ img {
 .footer a {
   margin: 15px;
   text-align: center;
-  font-size: 25px;
+  font-size: 3vw;
   position: relative;
   color: white;
   text-decoration: none;
 }
-@media (max-width: 768px) {
-  .footer a {
-    font-size: 20px;
-  }
-}
 .footer a:hover {
   color: #2dabff;
-  font-size: 28px;
+  font-size: 3.5vw;
   font-family: "dots";
 }
 .footer a::before {

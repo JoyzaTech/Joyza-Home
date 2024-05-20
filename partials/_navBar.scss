@@ -28,24 +28,6 @@
                 margin-left: 0px;
                 font-size: default;
             }
-            @media (max-width: 650px) {
-                .mainText{
-                    font-size: 45px;
-                }
-            }
-            @media (max-width: 580px) {
-                .mainText{
-                    font-size: 15px;
-                }
-                img{
-                    margin-left: 0px;
-                }
-                h1{
-                    margin-left: 3px;
-                    width: 45px;
-
-                }
-            }
         }
         
         #navLinks {
@@ -58,15 +40,9 @@
             margin-left: auto;
             text-align: center;
             a {
-                @media (max-width: 800px) {
-                    font-size: 20px;
-                }
-                @media (max-width: 750px) {
-                    font-size: 15px;
-                }
                 margin: 15px;
                 text-align: center;
-                font-size: 25px;
+                font-size: 2vw;
                 position: relative;
                 color: white;
                 text-decoration: none;
@@ -79,7 +55,7 @@
             }
             
             a:hover {
-                font-size: 28px;
+                font-size: 2.5vw;
                 font-family: 'dots';
             }
             
