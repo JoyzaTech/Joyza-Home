@@ -3,7 +3,6 @@ $(document).ready(function () {
     let width = window.innerWidth;
     let height = window.innerHeight;
     let dimensions = [width, height];
-    let delay = false
 
     let images = [
         {
@@ -24,21 +23,13 @@ $(document).ready(function () {
     let length = images.length;
 
     $("#sliderLeft").click(function () {
-        if (!delay) {
         getNextImages("left");
-        console.log('left');}
-        else{
-            
-        }
+        console.log('left');
+
     });
     $("#sliderRight").click(function () {
-        if (delay==false) {
-            delay = true;
             getNextImages("right");
             console.log('right');
-        }else{
-            
-        }
     });
     let currentImages = [images[0], images[1], images[2]];
     let intImages = function () {
@@ -47,7 +38,7 @@ $(document).ready(function () {
             `<img class="pictures" id="picture1" src="${currentImages[0].src}" alt="${currentImages[0].alt}">`
         );
         $("#sliderGrid").append(
-            `<img class="pictures" id="picture2" src="${currentImages[1].src}" alt="${currentImages[1].alt}">`
+            `<img class="pictures annoying" id="picture2" src="${currentImages[1].src}" alt="${currentImages[1].alt}">`
         );
         $("#sliderGrid").append(
             `<img class="pictures" id="picture3" src="${currentImages[2].src}" alt="${currentImages[2].alt}">`
@@ -90,40 +81,47 @@ $(document).ready(function () {
         height = window.innerHeight;
         ticScreen()
         transition(direction)
-        delay = false
     };
     let transition = async function (direction) {
         switch(direction){
-                    case "left":
-                        if (width <= 1200) {
-                            
-                        } else {
-                            $("#sliderGrid").append(
-                                `<img class="pictures" id="picture4" src="${currentImages[2].src}" alt="${currentImages[2].alt}">`
-                            )
-                            $('#picture4').css({left: rightSide.left - $('#picture3').position().left})
-                            .animate({left: `+=${$('#picture3').position().left - rightSide.left}px`}, 300)
-                            $('#picture1').animate({ left: `${leftSide.left - $('#picture1').position().left}px`,opacity: 0}, 300)
-                            $('#picture2').animate({ left: `-=${imageSize.width + 55}px` }, 300);
-                            $('#picture3').animate({ left: `-=${imageSize.width + 55}px` }, 300);
-                            
-                        }
-                        await sleep(300);
-                        intImages()
-                        break;
+        case "left":
+            if (width <= 1200) {
+                $('#sliderGrid').append(
+                    `<img class="pictures" id='picture5' src="${currentImages[1].src}" alt="${currentImages[1].alt}">`
+                )
+                $('#picture5').css({left: width / 100 * 25}).animate({left:0}, 300)
+                $('#picture2').animate({left:-(width / 100 * 25), opacity: 0}, 300)
+            } else {
+                $("#sliderGrid").append(
+                    `<img class="pictures" id="picture4" src="${currentImages[2].src}" alt="${currentImages[2].alt}">`
+                )
+                $('#picture4').css({left: 200})
+                .animate({left: `-=${$('#picture3').position().left - ($('#picture3').position().left - 200)}px`}, 300)
+                $('#picture1').animate({ left: `${-200}px`,opacity: 0}, 300)
+                $('#picture2').animate({ left: `-=${imageSize.width + 55}px` }, 300);
+                $('#picture3').animate({ left: `-=${imageSize.width + 55}px` }, 300);
+                
+            }
+            await sleep(300);
+            intImages()
+            break;
         case "right":
             if (width <= 1200){
-                
+                $('#sliderGrid').append(
+                    `<img class="pictures" id='picture5' src="${currentImages[1].src}" alt="${currentImages[1].alt}">`
+                )
+                $('#picture5').css({left: -(width / 100 * 25)}).animate({left:0}, 300)
+                $('#picture2').animate({left: (width / 100 * 25), opacity: 0}, 300)
             }
             else{
                 $("#sliderGrid").append(
                     `<img class="pictures" id="picture0" src="${currentImages[0].src}" alt="${currentImages[0].alt}">`
                 )
-                $('#picture0').css({left:leftSide.left - $('#picture1').position().left})
-                .animate({ left: `+=${$('#picture1').position().left - leftSide.left}px` }, 300)
+                $('#picture0').css({left:-200})
+                .animate({ left: `+=${$('#picture1').position().left - ($('#picture1').position().left -200)}px`}, 300)
                 $('#picture1').animate({ left: `+=${imageSize.width + 55}px` }, 300);
                 $('#picture2').animate({ left: `+=${imageSize.width + 55}px` }, 300);
-                $('#picture3').animate({ left: `${rightSide.left - $('#picture3').position().left}px`, opacity: 0}, 300);
+                $('#picture3').animate({ left: `+=${200}px`, opacity: 0}, 300);
             }
             await sleep(300);
             intImages()
@@ -138,8 +136,8 @@ $(document).ready(function () {
         leftSide = $('#postContent').position()
         rightSide = $('#nextContent').position()
         imageSize = {
-            width: Math.round($('#picture1').width()),
-            height: Math.round($('#picture1').height())
+            width: Math.round($('#picture2').width()),
+            height: Math.round($('#picture2').height())
         }
         console.log(leftSide, rightSide);
         console.log(imageSize);

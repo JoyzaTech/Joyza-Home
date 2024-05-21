@@ -193,15 +193,15 @@ img {
   .share {
     margin-bottom: 15px;
   }
-  body #sliderGrid {
+  #sliderGrid {
     grid-template-rows: [] 2% [] 400px [] 20px [];
-    column-gap: 10%;
+    column-gap: 1%;
     width: 80%;
   }
-  body #sliderGrid #picture1 {
+  #sliderGrid #picture1 {
     display: none;
   }
-  body #sliderGrid #picture3 {
+  #sliderGrid #picture3 {
     display: none;
   }
 }
@@ -221,7 +221,7 @@ img {
 #gridContainer #sliderGrid {
   display: grid;
   grid-template-rows: [] 20% [] 60% [] 170px [];
-  width: 65%;
+  width: 100%;
   column-gap: 55px;
 }
 #gridContainer #sliderGrid #sliderLeft {
@@ -274,13 +274,59 @@ img {
   width: 100%;
   height: 100%;
 }
-#gridContainer #sliderGrid .pictures {
+#gridContainer #sliderGrid #picture5 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+}
+
+.pictures {
   position: relative;
   border-radius: 0px;
   width: 300px;
   height: 400px;
 }
 
+@media screen and (max-width: 1200px) {
+  #subHeading {
+    font-size: 40px;
+  }
+  .mainImg {
+    display: none;
+  }
+  .otherImg {
+    display: none;
+  }
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 80px;
+    width: 100%;
+    margin: 0%;
+  }
+  .imagine {
+    margin-top: 1.5%;
+  }
+  .create {
+    margin-top: 1.5%;
+  }
+  .share {
+    margin-bottom: 15px;
+  }
+  #gridContainer #sliderGrid {
+    grid-template-rows: [] 2% [] 400px [] 20px [];
+    column-gap: 1%;
+    width: 80%;
+  }
+  #gridContainer #sliderGrid #picture1 {
+    display: none;
+  }
+  #gridContainer #sliderGrid #picture3 {
+    display: none;
+  }
+}
 .questions {
   margin-right: auto;
   margin-left: auto;
@@ -313,7 +359,7 @@ img {
   background-color: grey;
   opacity: 0.85;
   border: none;
-  width: 20vw;
+  width: 18vw;
   height: 10vw;
   color: white;
   text-align: center;
@@ -321,7 +367,7 @@ img {
   display: inline-block;
   font-size: 3vw;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 35px;
 }
 .questions button:hover {
   background-color: rgb(92, 91, 91);
@@ -356,6 +402,8 @@ img {
 .contact p {
   font-size: 4vw;
   margin-left: 5%;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .design, .development {
