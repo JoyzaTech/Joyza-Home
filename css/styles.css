@@ -153,6 +153,34 @@ img {
   transition: color 0.5s;
 }
 
+#formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+#formContainer form {
+  text-align: center;
+  padding: 1%;
+  border: 5px solid black;
+  border-radius: 5px;
+  max-width: 400px;
+  background-image: url(../images/Circuit\ Board.svg);
+  background-position: center;
+  background-size: cover;
+  width: 600px;
+  height: 100%;
+}
+#formContainer .center {
+  align-self: center;
+}
+
+.floatingText {
+  display: flex;
+  float: left;
+}
+
 .sliderButton:hover {
   color: #2dabff;
 }
@@ -195,7 +223,8 @@ img {
   }
   #sliderGrid {
     grid-template-rows: [] 2% [] 400px [] 20px [];
-    column-gap: 1%;
+    -moz-column-gap: 1%;
+         column-gap: 1%;
     width: 80%;
   }
   #sliderGrid #picture1 {
@@ -222,7 +251,8 @@ img {
   display: grid;
   grid-template-rows: [] 20% [] 60% [] 170px [];
   width: 100%;
-  column-gap: 55px;
+  -moz-column-gap: 55px;
+       column-gap: 55px;
 }
 #gridContainer #sliderGrid #sliderLeft {
   font-size: 50px;
@@ -317,7 +347,8 @@ img {
   }
   #gridContainer #sliderGrid {
     grid-template-rows: [] 2% [] 400px [] 20px [];
-    column-gap: 1%;
+    -moz-column-gap: 1%;
+         column-gap: 1%;
     width: 80%;
   }
   #gridContainer #sliderGrid #picture1 {

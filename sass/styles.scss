@@ -70,6 +70,33 @@ img {
     color: white;
     transition: color 0.5s;
 }
+#formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    form{
+        text-align: center;
+        padding: 1%;
+        border: 5px solid black;
+        border-radius: 5px;
+        max-width: 400px;
+        background-image: url(../images/Circuit\ Board.svg);
+        background-position: center;
+        background-size: cover;
+        width: 600px;
+        height: 100%;
+    }
+    .center{
+        align-self: center;
+    }
+}
+
+.floatingText{
+    display: flex;
+    float: left;
+}
 
 .sliderButton:hover {
     color: $blue;
