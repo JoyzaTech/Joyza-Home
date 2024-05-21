@@ -370,7 +370,7 @@ img {
   background-position: center;
   height: 30vw;
   border-radius: 50px;
-  padding: 80px;
+  padding: 10vw;
   position: relative;
 }
 .design #heading, .development #heading {
@@ -392,25 +392,26 @@ img {
   text-align: center;
   justify-content: space-evenly;
   position: absolute;
-  width: 45%;
-  height: 80px;
+  width: 45vw;
+  height: 3vw;
   bottom: 0;
   top: 70%;
   right: 0;
   left: 0;
   margin: auto;
+  padding-bottom: 4vw;
 }
 .design #buttons .open_jos, .development #buttons .open_jos {
   background-color: #2dabff;
   opacity: 0.85;
   border: none;
-  width: 200px;
-  height: 75px;
+  width: 15vw;
+  height: 8vw;
   color: white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 24px;
+  font-size: 2vw;
   cursor: pointer;
   border-radius: 25px;
 }
@@ -421,13 +422,13 @@ img {
   background-color: red;
   opacity: 0.85;
   border: none;
-  width: 200px;
-  height: 75px;
+  width: 15vw;
+  height: 8vw;
   color: white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 24px;
+  font-size: 2vw;
   cursor: pointer;
   border-radius: 25px;
 }
@@ -480,7 +481,7 @@ img {
   background-position: center;
   height: 30vw;
   border-radius: 50px;
-  padding: 80px;
+  padding: 10vw;
   position: relative;
 }
 #about_us .dotFont {
@@ -515,7 +516,7 @@ img {
   background-position: center;
   height: 30vw;
   border-radius: 50px;
-  padding: 80px;
+  padding: 10vw;
   position: relative;
 }
 #development h1 {
@@ -551,17 +552,19 @@ img {
   right: 0;
   left: 0;
   margin: auto;
+  padding-top: 14vw;
+  padding-bottom: 4vw;
 }
 #development #buttons_two .trailer {
   background-color: #2dabff;
   border: none;
   color: white;
-  width: 200px;
-  height: 75px;
+  width: 15vw;
+  height: 8vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 24px;
+  font-size: 4vw;
   cursor: pointer;
   border-radius: 25px;
 }
@@ -572,12 +575,12 @@ img {
   background-color: rgb(57, 57, 57);
   border: none;
   color: white;
-  width: 200px;
-  height: 75px;
+  width: 15vw;
+  height: 8vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 24px;
+  font-size: 2vw;
   cursor: pointer;
   border-radius: 25px;
 }
