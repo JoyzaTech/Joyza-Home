@@ -77,6 +77,8 @@ img {
         top: 5vw;
         bottom: 5vw;
     };
+    width: 75vw;
+    font-size: 3vw;
     text-align: center;
 }
 #formContainer {
@@ -91,12 +93,21 @@ img {
         padding: 1%;
         border: 5px solid black;
         border-radius: 5px;
-        max-width: 400px;
         background-image: url(../images/Circuit\ Board.svg);
         background-position: center;
         background-size: cover;
-        width: 600px;
-        height: 100%;
+        width: 70vw;
+        height: 13vw;
+        label{
+            font-size: 2vw;
+        }
+        input{
+            margin: {
+                top: 2vw;
+            };
+            width: 20vw;
+            height: 2vw;
+        }
     }
     .center{
         align-self: center;
