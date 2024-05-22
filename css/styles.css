@@ -223,8 +223,7 @@ img {
   }
   #sliderGrid {
     grid-template-rows: [] 2% [] 400px [] 20px [];
-    -moz-column-gap: 1%;
-         column-gap: 1%;
+    column-gap: 1%;
     width: 80%;
   }
   #sliderGrid #picture1 {
@@ -251,8 +250,7 @@ img {
   display: grid;
   grid-template-rows: [] 20% [] 60% [] 170px [];
   width: 100%;
-  -moz-column-gap: 55px;
-       column-gap: 55px;
+  column-gap: 55px;
 }
 #gridContainer #sliderGrid #sliderLeft {
   font-size: 50px;
@@ -347,8 +345,7 @@ img {
   }
   #gridContainer #sliderGrid {
     grid-template-rows: [] 2% [] 400px [] 20px [];
-    -moz-column-gap: 1%;
-         column-gap: 1%;
+    column-gap: 1%;
     width: 80%;
   }
   #gridContainer #sliderGrid #picture1 {
@@ -631,7 +628,7 @@ img {
   right: 0;
   left: 0;
   margin: auto;
-  padding-top: 14vw;
+  padding-top: 4vw;
   padding-bottom: 4vw;
 }
 #development #buttons_two .trailer {
