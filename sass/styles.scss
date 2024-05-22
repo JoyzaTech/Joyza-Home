@@ -70,12 +70,22 @@ img {
     color: white;
     transition: color 0.5s;
 }
+#upload {
+    margin: {
+        right: auto;
+        left: auto;
+        top: 5vw;
+        bottom: 5vw;
+    };
+    text-align: center;
+}
 #formContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     margin: 0;
+    margin-bottom: 175px;
     form{
         text-align: center;
         padding: 1%;
@@ -303,7 +313,7 @@ img {
         font-size: 2vw;
     }
     button {
-        background-color: grey;
+        background-color: rgb(57, 57, 57);
             opacity: 0.85;
             border: none;
             width: 18vw;
@@ -316,7 +326,7 @@ img {
             cursor: pointer;
             border-radius: 35px;
             &:hover{
-                background-color: rgb(92, 91, 91);
+                background-color: rgb(50, 50, 50);
             }
     }
 }
@@ -423,23 +433,6 @@ img {
             border-radius: 25px;
             &:hover{
                 background-color: #00548b;
-            }
-        }
-        .custom_app{
-            background-color: red;
-            opacity: 0.85;
-            border: none;
-            width: 15vw;
-            height: 8vw;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 2vw;
-            cursor: pointer;
-            border-radius: 25px;
-            &:hover{
-                background-color: darkred;
             }
         }
     }
@@ -610,7 +603,7 @@ img {
             cursor: pointer;
             border-radius: 25px;
             &:hover{
-                background-color: rgb(37, 37, 37);
+                background-color: rgb(50, 50, 50);
             }
         }
     }

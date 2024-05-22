@@ -153,12 +153,21 @@ img {
   transition: color 0.5s;
 }
 
+#upload {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  text-align: center;
+}
+
 #formContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   margin: 0;
+  margin-bottom: 175px;
 }
 #formContainer form {
   text-align: center;
@@ -384,7 +393,7 @@ img {
   font-size: 2vw;
 }
 .questions button {
-  background-color: grey;
+  background-color: rgb(57, 57, 57);
   opacity: 0.85;
   border: none;
   width: 18vw;
@@ -398,7 +407,7 @@ img {
   border-radius: 35px;
 }
 .questions button:hover {
-  background-color: rgb(92, 91, 91);
+  background-color: rgb(50, 50, 50);
 }
 
 .contact {
@@ -493,23 +502,6 @@ img {
 }
 .design #buttons .open_jos:hover, .development #buttons .open_jos:hover {
   background-color: #00548b;
-}
-.design #buttons .custom_app, .development #buttons .custom_app {
-  background-color: red;
-  opacity: 0.85;
-  border: none;
-  width: 15vw;
-  height: 8vw;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 2vw;
-  cursor: pointer;
-  border-radius: 25px;
-}
-.design #buttons .custom_app:hover, .development #buttons .custom_app:hover {
-  background-color: darkred;
 }
 
 .footer {
@@ -661,5 +653,5 @@ img {
   border-radius: 25px;
 }
 #development #buttons_two .community:hover {
-  background-color: rgb(37, 37, 37);
+  background-color: rgb(50, 50, 50);
 }/*# sourceMappingURL=styles.css.map */
